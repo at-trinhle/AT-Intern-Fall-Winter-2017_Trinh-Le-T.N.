@@ -274,7 +274,7 @@ body {
     background-color: #e5e5e5;
     position: absolute;
     right: -26px;
-    top: -109px; }
+    top: -120px; }
     .next-img button:hover {
       background-color: #d9bb4b; }
       .next-img button:hover i {
@@ -598,8 +598,8 @@ body {
 .back-top {
   display: block;
   position: fixed;
-  bottom: 0;
-  right: 0; }
+  bottom: 20px;
+  right: 10px; }
   .back-top a button {
     width: 50px;
     height: 50px;
