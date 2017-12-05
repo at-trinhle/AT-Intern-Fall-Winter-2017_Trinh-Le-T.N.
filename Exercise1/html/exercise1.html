@@ -21,7 +21,7 @@
             </div>
           </div>
           <div class="top-right">
-            <ul>
+            <ul class="list-icon">
               <li><button><i class="fa fa-facebook" aria-hidden="true"></i></button></li>
               <li><button><i class="fa fa-twitter" aria-hidden="true"></i></button></li>
               <li><button><i class="fa fa-wifi" aria-hidden="true"></i></button></li>
@@ -33,32 +33,30 @@
           <div class="home">
             <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
           </div>
-          <nav>
-            <ul>
-              <li>
-                <a href="#">ABOUT US
-                  <ul class="drop-down">
-                    <li><a href="#">TESTIMONIALS</a></li>
-                    <li><a href="#">ARCHIVES</a></li>
-                    <li><a href="#">FAQS</a></li>
-                  </ul>
-                </a>
+          <nav class="nav-list">
+            <ul class="wrap-ul">
+              <li class="first">
+                <a href="#">ABOUT US</a>
+                <ul class="drop-down-one">
+                  <li><a href="#">TESTIMONIALS</a></li>
+                  <li><a href="#">ARCHIVES</a></li>
+                  <li><a href="#">FAQS</a></li>
+                </ul>
               </li>
-              <li>
-                <a href="#">GALLERY
-                  <ul class="drop-down">
+              <li class="second">
+                <a href="#">GALLERY</a>
+                  <ul class="drop-down-two">
                     <li><a href="#">GALLERY 2</a></li>
                     <li>
                       <a href="#">GALLERY 3</a>
-                      <ul>
+                      <ul class="drop-lv2">
                         <li><a href="#">CATEGORY 1</a></li>
-                        <li><a href="#">CATEGORY 2</a></li>
+                        <li class="drop-li"><a href="#">CATEGORY 2</a></li>
                         <li><a href="#">CATEGORY 3</a></li>
                       </ul>
                     </li>
                     <li><a href="#">GALLERY 4</a></li>
                   </ul>
-                </a>
               </li>
               <li><a href="#">EVENTS</a></li>
               <li><a href="#">BLOG</a></li>
@@ -73,123 +71,122 @@
         </div>
       </div>
     </header>
-    <div class="content">
+    <section class="content">
       <div class="slide-show">
         <div class="show-img">
           <img src="../images/slide3.jpg">
           <h2><strong>CONSECTETUER</strong><br>STARTING FROM: $299.99</h2>
           <div class="back-next">
-            <button>
+            <button class="gallery-left">
               <i class="fa fa-angle-left" aria-hidden="true"></i>
             </button>
-            <button>
+            <button class="gallery-right">
               <i class="fa fa-angle-right" aria-hidden="true"></i>
             </button>
           </div>
         </div>
-        </div>
       </div>
-      <div class="feature-space">
-        <h2>FEATURED</h2>
+    </section>
+    <section class="feature-space">
+      <h2>FEATURED</h2>
+    </section>
+    <section class="image-show">
+      <div class="one-img"><!-- show-one-img -->
+        <img src="../images/image1.jpg">
       </div>
-      <div class="image-show">
-        <div class="one-img"><!-- show-one-img -->
-          <img src="../images/image1.jpg">
-        </div>
-        <div class="one-img"><!-- show-one-img -->
-          <img src="../images/Depositphotos_4474020_original-199x128.jpg">
-        </div>
-        <div class="one-img"><!-- show-one-img -->
-          <img src="../images/Depositphotos_3.jpg">
-        </div>
-        <div class="one-img"><!-- show-one-img -->
-          <img src="../images/image4.jpg">
-        </div>
-        <div class="one-img"><!-- show-one-img -->
-          <img src="../images/images5.jpg">
-        </div>
+      <div class="one-img"><!-- show-one-img -->
+        <img src="../images/Depositphotos_4474020_original-199x128.jpg">
       </div>
-      <div class="next-img">
-        <button>
-          <i class="fa fa-angle-right" aria-hidden="true"></i>
-        </button>
+      <div class="one-img"><!-- show-one-img -->
+        <img src="../images/Depositphotos_3.jpg">
       </div>
-      <div class="some-news">
-        <article class="one-block-new"> <!-- article for one block -->
-          <h5>
-            NEWS<br><b>& EVENTS</b>
-          </h5>
-          <img src="../images/new-event.jpg">
-          <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
-          <button type="button-one"><span class="color-one">MORE</span></button>
-        </article>
-        <article class="one-block-new"> <!-- article for one block -->
-          <h5>
-            NEWS<br><b>DESTINATIONS</b>
-          </h5>
-          <img src="../images/new-2.jpg">
-          <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
-          <button type="button-one"><span class="color-two">MORE</span></button>
-        </article>
-        <article class="one-block-new"> <!-- article for one block -->
-          <h5>
-            POPULAR<br><b>TOURS</b>
-          </h5>
-          <img src="../images/new3.jpg">
-          <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
-          <button type="button-one"><span class="color-three">MORE</span></button>
-        </article>
-        <article class="one-block-new"> <!-- article for one block -->
-          <h5>
-            BOOKING<br><b>ONLINE</b>
-          </h5>
-          <img src="../images/new4.jpg">
-          <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
-          <button type="button-one"><span class="color-four">MORE</span></button>
-        </article>
+      <div class="one-img"><!-- show-one-img -->
+        <img src="../images/image4.jpg">
       </div>
-      <div class="div-content">
-        <section class="content-left">
-          <h2>HELLO THERE!</h2>
-          <h3>WELCOME TO OUR SITE</h3>
-          <div class="img-para">
-            <img src="../images/girl-img.png">
-            <div class="right-para">
-              <h4>PHASELLUS TURPIS ORG PELLENTE DOLOR AVEL</h4>
-              <p>Lorem ipsum dolor sit amet, cons ctet adipiscing. Duis eros ligula la quiseuis in dignisim atne liquam quis consectet magna liquam sed nibh condimentum.</p>
-            </div>
+      <div class="one-img"><!-- show-one-img -->
+        <img src="../images/images5.jpg">
+      </div>
+    </section>
+    <section class="next-img">
+      <button>
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+      </button>
+    </section>
+    <section class="some-news">
+      <article class="one-block-new"> <!-- article for one block -->
+        <h5>
+          NEWS<br><span>& EVENTS</span>
+        </h5>
+        <img src="../images/new-event.jpg">
+        <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
+        <button type="button-one"><span class="color-one">MORE</span></button>
+      </article>
+      <article class="one-block-new"> <!-- article for one block -->
+        <h5>
+          NEWS<br><span>DESTINATIONS</span>
+        </h5>
+        <img src="../images/new-2.jpg">
+        <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
+        <button type="button-one"><span class="color-two">MORE</span></button>
+      </article>
+      <article class="one-block-new"> <!-- article for one block -->
+        <h5>
+          POPULAR<br><span>TOURS</span>
+        </h5>
+        <img src="../images/new3.jpg">
+        <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
+        <button type="button-one"><span class="color-three">MORE</span></button>
+      </article>
+      <article class="one-block-new"> <!-- article for one block -->
+        <h5>
+          BOOKING<br><span>ONLINE</span>
+        </h5>
+        <img src="../images/new4.jpg">
+        <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
+        <button type="button-one"><span class="color-four">MORE</span></button>
+      </article>
+    </section>
+    <section class="div-content">
+      <section class="content-left">
+        <h2>HELLO THERE!</h2>
+        <h3>WELCOME TO OUR SITE</h3>
+        <div class="img-para">
+          <img src="../images/girl-img.png">
+          <div class="right-para">
+            <h4>PHASELLUS TURPIS ORG PELLENTE DOLOR AVEL</h4>
+            <p>Lorem ipsum dolor sit amet, cons ctet adipiscing. Duis eros ligula la quiseuis in dignisim atne liquam quis consectet magna liquam sed nibh condimentum.</p>
           </div>
-          <p class="para-only">Lorem ipsum dolor sit amet, consete ctetur adipiscing. Duis eros ligula la quiseuismod dignisim atne liquam quis consectetur magna liquam sed nibh condimentum. ligula con eges. Curabitur eget massa neque, non laoreet purus. Etiam id eros in dultricies posu a mauris. Sed accumsan placerat ultricies.</p>
-          <button>MORE</button>
-        </section>
-        <section class="content-right">
-          <div class="one-row">
-            <section class="one-block-something">
-              <h2>24/7 CLIENT<br><span class="first-color">SUPPORT</span></h2>
-              <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
-              <button>MORE</button>
-            </section>
-            <section class="one-block-something">
-              <h2>100% SATISFACTION<br><span class="second-color">GUARANTEE</span></h2>
-              <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
-              <button>MORE</button>
-            </section>
-          </div>
-          <div class="one-row">
-            <section class="one-block-something">
-              <h2>VIEW<br><span class="three-color">OUR GALLERY</span></h2>
-              <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
-              <button>MORE</button>
-            </section>
-            <section class="one-block-something">
-              <h2>TOP<br><span class="four-color">SERVICES</span></h2>
-              <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
-              <button>MORE</button>
-            </section>
-          </div>
-        </section>
-      </div>
-    </div>
+        </div>
+        <p class="para-only">Lorem ipsum dolor sit amet, consete ctetur adipiscing. Duis eros ligula la quiseuismod dignisim atne liquam quis consectetur magna liquam sed nibh condimentum. ligula con eges. Curabitur eget massa neque, non laoreet purus. Etiam id eros in dultricies posu a mauris. Sed accumsan placerat ultricies.</p>
+        <button>MORE</button>
+      </section>
+      <section class="content-right">
+        <div class="one-row">
+          <section class="one-block-something">
+            <h2>24/7 CLIENT<br><span class="first-color">SUPPORT</span></h2>
+            <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
+            <button>MORE</button>
+          </section>
+          <section class="one-block-something">
+            <h2>100% SATISFACTION<br><span class="second-color">GUARANTEE</span></h2>
+            <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
+            <button>MORE</button>
+          </section>
+        </div>
+        <div class="one-row">
+          <section class="one-block-something">
+            <h2>VIEW<br><span class="three-color">OUR GALLERY</span></h2>
+            <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
+            <button>MORE</button>
+          </section>
+          <section class="one-block-something">
+            <h2>TOP<br><span class="four-color">SERVICES</span></h2>
+            <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
+            <button>MORE</button>
+          </section>
+        </div>
+      </section>
+    </section>
   </div>
   <footer class="footer">
     <div class="footer-wraper">
