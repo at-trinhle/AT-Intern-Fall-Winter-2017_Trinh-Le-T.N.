@@ -429,7 +429,7 @@ body{
 .one-block-new:nth-child(4){
   background-color: #d685a2;
 }
-.div-content{
+.content-container{
   display: block;
   margin-top: 60px;
   margin-bottom: 20px;
@@ -604,7 +604,7 @@ body{
         position: absolute;
         top: 114px;
         font-size: 15px;
-        left: 277px;
+        left: 290px;
         font-size: 14px;
         line-height: 14px;
         color: #d9bb4b;
@@ -721,12 +721,10 @@ body{
   }
 }
 .back-top{
-  display: block;
-  position: fixed;
-  bottom: 20px;
-  right: 10px;
-  a{
-    button{
+      display: block;
+      position: fixed;
+      bottom: 20px;
+      right: 10px;
       width: 50px;
       height: 50px;
       border: none;
@@ -743,6 +741,4 @@ body{
         color: white;
         font-size: 40px;
       }
-    }
-  }
 }

@@ -350,7 +350,7 @@ body {
 .one-block-new:nth-child(4) {
   background-color: #d685a2; }
 
-.div-content {
+.content-container {
   display: block;
   margin-top: 60px;
   margin-bottom: 20px; }
@@ -503,7 +503,7 @@ body {
       position: absolute;
       top: 114px;
       font-size: 15px;
-      left: 277px;
+      left: 290px;
       font-size: 14px;
       line-height: 14px;
       color: #d9bb4b; }
@@ -599,19 +599,18 @@ body {
   display: block;
   position: fixed;
   bottom: 20px;
-  right: 10px; }
-  .back-top a button {
-    width: 50px;
-    height: 50px;
-    border: none;
-    background-color: #5ecdd4; }
-    .back-top a button:hover {
-      background-color: #363636;
-      cursor: pointer;
-      -webkit-transition: background-color 1s ease-out;
-      -moz-transition: background-color 1s ease-out;
-      -o-transition: background-color 1s ease-out;
-      transition: background-color 1s ease-out; }
-    .back-top a button i {
-      color: white;
-      font-size: 40px; }
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #5ecdd4; }
+  .back-top:hover {
+    background-color: #363636;
+    cursor: pointer;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out; }
+  .back-top i {
+    color: white;
+    font-size: 40px; }
