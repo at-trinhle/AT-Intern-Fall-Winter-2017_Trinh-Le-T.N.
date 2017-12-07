@@ -1,0 +1,219 @@
+@import '../base/all';
+.header{
+  @include padding-wrap;
+}
+.top-head{
+  display:block;
+  padding-top: 5.75%;
+  margin-bottom: 50px;
+}
+.top-left{
+  display:inline-block;
+  img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .descript-logo{
+    display: inline-block;
+    h1{
+      color: white;
+      font-size: 50px;
+      cursor: pointer;
+    }
+    p{
+      font-weight: 300 !important;
+      color: map-get($color,dark-white);
+      padding-left: 10px;
+      font-size: 15px;
+      line-height: 15px;
+      margin-top: -10px;
+    }
+  }
+}
+.top-right{
+  display:inline-block;
+  float:right;
+  padding-top: 20px;
+}
+.list-icon{
+  list-style: none;
+  li{
+    display:inline-block;
+    margin-top: 5px;
+    a{
+      border-radius: 50%;
+      color: white;
+      background-color: map-get($color,black-a);
+      border: none;
+      cursor: pointer;
+      box-shadow: 2px 2px 0 rgba(29,29,34,0.4);
+      display: block;
+      width: 38px;
+      i{
+        text-align: center;
+        padding: 10px 10px;
+      }
+      .fa-facebook{
+        padding: 10px 14px;
+      }
+      .fa-twitter{
+        padding: 10px 12px;
+      }
+    }
+    a:hover{
+      background-color: map-get($color,color-nav);
+    }
+  }
+}
+.bottom-head{
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  background-color: map-get($color,color-nav);
+}
+.wrap-ul{
+  display: flex;
+  list-style: none;
+  li{
+    cursor:pointer;
+    border-left: 1px solid map-get($color,blue-d);
+    border-right: 1px solid map-get($color,blue-b);
+    text-align: center;
+    a{
+      padding: 26px 44px;
+      display: block;
+      color: map-get($color,white);
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 17px;
+    }
+    &:first-child {
+      a {
+        padding: 18px 20px;
+      }
+    }
+    &:hover{
+      background-color: map-get($color,blue-a);
+    }
+    ul {
+      display: none;
+    }
+  }
+}
+.one{
+  position: relative;
+  &:hover{
+    .drop-down-one{
+      display:block;
+    }
+  }
+}
+.two{
+  padding-right: 9px;
+  &:hover{
+    .drop-down-two{
+      display: block;
+    }
+  }
+}
+.drop-down-one {
+  display: none;
+  width: 100%;
+  background-color: map-get($color,color-nav);
+  position: absolute;
+  z-index: 99;
+  top: 100.68%;
+  left: .3%;
+  li {
+    display: block;
+    a {
+      &:hover {
+        color: map-get($color,black);
+      }
+    }
+  }
+}
+.drop-down-two {
+  width: 12.2%;
+  background-color: map-get($color,color-nav);
+  position: absolute;
+  z-index: 99;
+  top: 10.9%;
+  left: 21.8%;
+  li {
+    display: block;
+    a{
+      &:hover {
+      color: map-get($color,black);
+      }
+    }
+  }
+}
+.drop-lv2{
+  background-color:map-get($color,black);
+  border-left: 1px solid map-get($color,black);
+  border-right: 1px solid map-get($color,black);
+  position: absolute;
+  z-index: 99;
+  top: 18%;
+  left: 106%;
+  li {
+    display: block;
+    background-color: map-get($color,black);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    a {
+      &:hover {
+        color: map-get($color,yellow-a);
+      }
+      
+    }
+  }
+}
+.search{
+  border-left: 1px solid map-get($color,blue-d);
+  position: relative;
+  input{
+    height: 39px;
+    border: none;
+    color: map-get($color,white);
+    margin-top: 17px;
+    margin-left: 80px;
+    margin-right: 41px;
+    width: 240px;
+    border-radius: 10px;
+    background-color: map-get($color,blue-c);
+    box-shadow: inset 1px 1px 0 map-get($color,blue-c);
+  }
+  input[type="submit"]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 35px;
+    width: 59px;
+    border:none;
+    background-color: map-get($color,blue-c);
+    box-shadow: none;
+  }
+  .fa-search{
+    position: absolute;
+    top: 24px;
+    right: 45px;
+    font-size: 25px;
+    color: white;
+    cursor:pointer;
+    &:hover{
+      color:map-get($color,black);
+    }
+  }
+}
+.home{
+  background-color: map-get($color,blue-a);
+  a{
+    i{
+      font-size: 26px;
+    }
+  }
+}
