@@ -1,0 +1,354 @@
+.content-images{
+  @include padding-wrap;
+}
+.show-img{
+  position: relative;
+  h2{
+    font-size: 50px;
+    position: absolute;
+    left: 86px;
+    top: 139px;
+    font-weight: 300;
+    color: map-get($color,blue-c);
+    strong{
+      color: map-get($color,white);
+      font-size: 50px;
+      font-weight: 600;
+    }
+  }
+  .back-next{
+    position: absolute;
+    left: 88px;
+    top: 290px;
+    button{
+      width: 53px;
+      height: 53px;
+      font-size: 30px;
+      background-color: map-get($color,button-white);
+      color: black;
+      &:hover{
+        background-color: map-get($color,yellow-a);
+        color: map-get($color,white);
+      }
+      top: 282px;
+    }
+  }
+}
+.feature-space{
+  @include margin-wrap;
+  height: 70px;
+  margin-top: 10px;
+  background-color: map-get($color,button-white);
+  .feature{
+    font-weight: 300;
+    padding: 16px 34px;
+    font-size: 25px;
+    color: map-get($color,color-feature);
+  }
+}
+.image-show{
+  width:90.5%;
+  margin-left:4.5%;
+  display: block;
+  height: 190px;
+  background-color: map-get($color,background-slide-img);
+  text-align: center;
+  .one-img{
+    padding: 25px 15px;;
+    display: inline-block;
+    img{
+      width: 187px;
+      height: 130px;
+      border: 7px solid map-get($color,white);
+      &:hover{
+        border: 7px solid map-get($color,yellow-a);
+      }
+    }
+  }
+}
+.next-img{
+  position: relative;
+  button{    
+    width: 53px;
+    height: 53px;
+    background-color:map-get($color,button-white);
+    position: absolute;
+    right: 35px;
+    top: -120px;
+    &:hover{
+      background-color: map-get($color,yellow-a);
+      i{
+        color: map-get($color,white);
+      }
+    }
+    i{
+    font-size: 40px;
+    color: black;
+    font-weight: 200 !important;
+    }
+  }
+}
+.some-news{
+  @include padding-wrap;
+  display: block;
+  margin-top: 29px;
+  margin-left: 2px;
+  text-align-last: justify;
+}
+.one-block-new{
+  display: inline-block;
+  width: 272px;
+  height: 430px;
+  h5{
+    color: map-get($color,white);
+    text-align: left;
+    padding: 22px 122px 20px 33px;
+    font-size: 25px;
+    line-height: 21px;
+    font-weight: 300;
+    span{
+      font-weight: 600;
+    }
+  }
+  img{
+    width: 272px;
+  }
+  p{
+    color: map-get($color,white);
+    font-family: Arial;
+    padding: 20px 20px 20px 33px;
+    line-height: 23px;
+    font-size: 14px;
+  }
+  button{
+    width:89px;
+    height: 38px;
+    margin-left: 33px;
+    margin-top: 4px;
+    background-color: map-get($color,white);
+    span{
+      margin-left: 26px;
+      line-height: 16px;
+      font-size: 14px;
+    }
+    .color-one{
+      color: map-get($color,more-a);
+    }
+    .color-two{
+      color: map-get($color,more-b);
+    }
+    .color-three{
+      color: map-get($color,more-c);
+    }
+    .color-four{
+      color: map-get($color,more-d);
+    }
+  }
+  button:hover{
+    background-color: map-get($color,button-more);
+    span{
+      color: white;
+    }
+  }
+}
+.one-block-new:first-child{
+  background-color: map-get($color,more-a);
+}
+.one-block-new:nth-child(2){
+  background-color: map-get($color,more-b);
+}
+.one-block-new:nth-child(3){
+  background-color: map-get($color,more-c);
+}
+.one-block-new:nth-child(4){
+  background-color: map-get($color,more-d);
+}
+.some-news{
+  @include padding-wrap;
+  display: block;
+  margin-top: 29px;
+  margin-left: 2px;
+  text-align-last: justify;
+}
+.one-block-new{
+  display: inline-block;
+  width: 272px;
+  height: 430px;
+  h5{
+    color: map-get($color,white);
+    text-align: left;
+    padding: 22px 122px 20px 33px;
+    font-size: 25px;
+    line-height: 21px;
+    font-weight: 300;
+    span{
+      font-weight: 600;
+    }
+  }
+  img{
+    width: 272px;
+  }
+  p{
+    color: map-get($color,white);
+    font-family: Arial;
+    padding: 20px 20px 20px 33px;
+    line-height: 23px;
+    font-size: 14px;
+  }
+  button{
+    span{
+      margin-left: 26px;
+      line-height: 16px;
+      font-size: 14px;
+    }
+    .color-one{
+      color: map-get($color,more-a);
+    }
+    .color-two{
+      color: map-get($color,more-b);
+    }
+    .color-three{
+      color: map-get($color,more-c);
+    }
+    .color-four{
+      color: map-get($color,more-d);
+    }
+  }
+  button:hover{
+    background-color: map-get($color,button-more);
+    span{
+      color: white;
+    }
+  }
+}
+.one-block-new:first-child{
+  background-color: map-get($color,more-a);
+}
+.one-block-new:nth-child(2){
+  background-color: map-get($color,more-b);
+}
+.one-block-new:nth-child(3){
+  background-color: map-get($color,more-c);
+}
+.one-block-new:nth-child(4){
+  background-color: map-get($color,more-d);
+}
+.content-container{
+  @include padding-wrap;
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.content-left{
+  width: 48%;
+  display: inline-block;
+  h2{
+    color: #5ecdd4;
+    font-size: 45px;
+    line-height: 42px;
+    margin: 2px 0px 2px 1px;
+  }
+  h3{
+    font-weight: 300 !important;
+    font-size: 25px;
+    line-height: 28px;
+    margin-bottom: 35px;
+    padding: 0px 5px 2px 8px;
+    color: map-get($color,color-feature);
+  }
+  button{
+    margin: 24px 0px 50px 2px;
+    padding-left: 2px;
+    &:hover{
+      background-color: map-get($color,button-blue);
+    }
+  }
+}
+.img-para{
+  display: block;
+  img{
+    display: inline;
+    width: 48%;
+    margin-left: 3px;
+  }
+  .right-para{
+    width: 46.5%;
+    display: inline;
+    float: right;
+    h4{
+      font-weight: 300 !important;
+      font-size: 20px;
+      color: map-get($color,color-feature);
+      padding-left: 3px;
+      line-height: 24px;
+    }
+    p{
+      color: map-get($color,p);
+      font-family: Arial;
+      margin-top: 15px;
+      margin-left: 3px;
+      font-size: 14px;
+      line-height: 23px;
+    }
+  }
+}
+.para-only{
+  color: map-get($color,p);
+  margin-top: 35px;
+  line-height: 23px;
+  margin-bottom: 25px;
+  font-family: Arial;
+  font-size: 14px;
+  padding-left: 2px;
+}
+.content-right{
+  width: 52%;
+  display: inline-block;
+  float: right;
+  padding-left: 45px;
+  .one-row{
+    display: flex;
+    flex-direction: row;
+  }
+}
+.one-block-something{
+  width: 48%;
+  margin-right: 15px;
+  h2{
+    font-weight: 300 !important;
+    color: map-get($color,color-feature);
+    font-size: 25px;
+    line-height: 27px;
+    margin-bottom: 21px;
+    margin-top: 5px;
+    span{
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 25px;
+    }
+    .first-color{
+      color: map-get($color,blue-e);
+    }
+    .second-color{
+      color: map-get($color,blue-f);
+    }
+    .three-color{
+      color: map-get($color,yellow-b);
+    }
+    .four-color{
+      color: map-get($color,pink-a);
+    }
+  }
+  p{
+    line-height: 23px;
+    color: map-get($color,p);
+    font-size: 14px;
+    font-family: Arial;
+  }
+  button{
+    margin: 23px 0px 48px 0px;
+    &:hover{
+      background-color: map-get($color,button-blue);
+    }
+  }
+}

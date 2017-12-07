@@ -1,0 +1,63 @@
+.footer{
+  background-color: map-get($color,color-footer);
+  display: block;
+  width:100%;
+  padding-left:11%;
+  padding-top: 7%;
+  padding-bottom: 4.25%;
+  color: map-get($color,white);
+  position: relative;
+}
+.logo-footer{
+  width: 44.4%;
+  display: inline-block;
+  a{
+    display: flex;
+    flex-direction: row;
+    img{
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      position: absolute;
+      left: 59px;
+      top: 104px;
+      cursor: pointer;
+    }
+  }
+}
+.padding-right{
+  position: absolute;
+  top: 95px;
+  left: 99px;
+  h1{
+    cursor: pointer;
+  }
+  p{
+    margin-top: -8px;
+    margin-left: 2px;
+    font-size: 10px;
+    color: map-get($color,dark-white);
+  }
+}
+.copy-righ{
+  position: absolute;
+  top: 122px;
+  font-size: 15px;
+  left: 269px;
+  font-size: 14px;
+  line-height: 14px;
+  color: map-get($color,yellow-a);
+  span:hover{
+  color: map-get($color,blue-b);
+  }
+}
+.about-us{
+  padding-top: 19px;
+  @include footer-right;
+}
+.our-offers{
+  @include footer-right;
+}
+.categories{
+  @include footer-right;
+}

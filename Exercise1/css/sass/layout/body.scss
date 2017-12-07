@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  color: map-get($color,black);
+  background-image: url('../images/bg-top.jpg');
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
