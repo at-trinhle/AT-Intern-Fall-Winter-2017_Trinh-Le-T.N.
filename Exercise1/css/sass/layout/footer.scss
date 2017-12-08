@@ -31,6 +31,7 @@
   left: 99px;
   h1{
     cursor: pointer;
+    font-size: 32px;
   }
   p{
     margin-top: -8px;
@@ -53,11 +54,58 @@
 }
 .about-us{
   padding-top: 19px;
-  @include footer-right;
+  display: inline-block;
+  width: 170px;
+  height: 210px;
+  margin-right:2.25%;
+  h2{
+    font-weight: 300 !important;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  ul{
+    list-style: none;
+    font-family: Arial;
+    padding-top: 20px;
+    li{
+      i{
+        margin-right: 8px;
+        width: 15px;
+        text-align: center;
+        height: 15px;
+        padding-bottom: 4px;
+        background: map-get($color,p);  
+      }
+      a{
+        margin-left: 7px;
+        color: map-get($color,p);
+        line-height: 34px;
+        font-size: 14px;
+      }
+      a:hover{
+        color: map-get($color,yellow-a);
+      }
+    }
+  }
 }
-.our-offers{
-  @include footer-right;
-}
-.categories{
-  @include footer-right;
+.back-top{
+  position: fixed;
+  bottom: 36px;
+  right: 16px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #5ecdd4;
+  &:hover{
+    background-color: #363636;
+    cursor: pointer;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;  
+  }
+  i{
+    color: map-get($color,white);
+    font-size: 40px;
+  }
 }

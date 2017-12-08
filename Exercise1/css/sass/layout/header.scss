@@ -1,6 +1,6 @@
-@import '../base/all';
 .header{
-  @include padding-wrap;
+  width:95%;
+  padding-left:4.5%;
 }
 .top-head{
   display:block;

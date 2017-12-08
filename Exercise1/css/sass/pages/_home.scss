@@ -1,5 +1,6 @@
 .content-images{
-  @include padding-wrap;
+  width:95%;
+  padding-left:4.5%;
 }
 .show-img{
   position: relative;
@@ -35,7 +36,8 @@
   }
 }
 .feature-space{
-  @include margin-wrap;
+  width:90.5%;
+  margin-left:4.5%;
   height: 70px;
   margin-top: 10px;
   background-color: map-get($color,button-white);
@@ -89,7 +91,8 @@
   }
 }
 .some-news{
-  @include padding-wrap;
+  width:95%;
+  padding-left:4.5%;
   display: block;
   margin-top: 29px;
   margin-left: 2px;
@@ -164,7 +167,8 @@
   background-color: map-get($color,more-d);
 }
 .some-news{
-  @include padding-wrap;
+  width:95%;
+  padding-left:4.5%;
   display: block;
   margin-top: 29px;
   margin-left: 2px;
@@ -234,7 +238,8 @@
   background-color: map-get($color,more-d);
 }
 .content-container{
-  @include padding-wrap;
+  width:95%;
+  padding-left:4.5%;
   display: block;
   margin-top: 60px;
   margin-bottom: 20px;
