@@ -7,6 +7,7 @@
   padding-bottom: 4.25%;
   color: map-get($color,white);
   position: relative;
+  z-index: 99;
 }
 .logo-footer{
   width: 44.4%;
@@ -15,36 +16,17 @@
     display: flex;
     flex-direction: row;
     img{
-      width: 37px;
-      height: 37px;
-      border-radius: 50%;
       position: absolute;
-      left: 59px;
-      top: 104px;
-      cursor: pointer;
+      left: 54px;
+      top: 106px;
     }
-  }
-}
-.padding-right{
-  position: absolute;
-  top: 95px;
-  left: 99px;
-  h1{
-    cursor: pointer;
-    font-size: 32px;
-  }
-  p{
-    margin-top: -8px;
-    margin-left: 2px;
-    font-size: 10px;
-    color: map-get($color,dark-white);
   }
 }
 .copy-righ{
   position: absolute;
-  top: 117px;
+  top: 116px;
   font-size: 15px;
-  left: 288px;
+  left: 272px;
   font-size: 14px;
   line-height: 14px;
   color: map-get($color,yellow-a);
@@ -53,7 +35,7 @@
   }
 }
 .about-us{
-  padding-top: 19px;
+  padding-top: 9px;
   display: inline-block;
   width: 170px;
   height: 210px;
@@ -68,14 +50,8 @@
     font-family: Arial;
     padding-top: 20px;
     li{
-      i{
-        margin-right: 8px;
-        width: 15px;
-        text-align: center;
-        height: 15px;
-        padding-bottom: 4px;
-        background: map-get($color,p);  
-      }
+      background: url(../images/cat-arrow.png) no-repeat 0 9px;
+      padding-left: 24px;
       a{
         margin-left: 7px;
         color: map-get($color,p);

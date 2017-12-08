@@ -1,35 +1,27 @@
 .header{
   width:95%;
-  padding-left:4.5%;
+  padding-left:4.3%;
+  position: relative;
+  z-index: 120;
 }
 .top-head{
   display:block;
-  padding-top: 5.75%;
-  margin-bottom: 50px;
+  padding-top: 6.3%;
+  margin-bottom: 37px;
 }
 .top-left{
   display:inline-block;
   img{
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    border-radius: 50%;
+    padding-top: 8px;
   }
-  .descript-logo{
-    display: inline-block;
-    h1{
-      color: white;
-      font-size: 50px;
-      cursor: pointer;
-    }
-    p{
-      font-weight: 300 !important;
-      color: map-get($color,dark-white);
-      padding-left: 10px;
-      font-size: 15px;
-      line-height: 15px;
-      margin-top: -10px;
-    }
+  p{    
+    font-weight: 300 !important;
+    color: map-get($color,d3);
+    padding-left: 73px;
+    position: relative;
+    top: -21px;
+    font-size: 15px;
+    line-height: 15px;
   }
 }
 .top-right{
@@ -41,7 +33,6 @@
   list-style: none;
   li{
     display:inline-block;
-    margin-top: 5px;
     a{
       border-radius: 50%;
       color: white;
@@ -50,7 +41,8 @@
       cursor: pointer;
       box-shadow: 2px 2px 0 rgba(29,29,34,0.4);
       display: block;
-      width: 38px;
+      width: 36px;
+      height: 35px;
       i{
         text-align: center;
         padding: 10px 10px;
@@ -70,7 +62,6 @@
 .bottom-head{
   display: flex;
   flex-direction: row;
-  font-size: 18px;
   background-color: map-get($color,color-nav);
 }
 .wrap-ul{
@@ -78,21 +69,17 @@
   list-style: none;
   li{
     cursor:pointer;
+    width: 160px;
     border-left: 1px solid map-get($color,blue-d);
     border-right: 1px solid map-get($color,blue-b);
     text-align: center;
     a{
-      padding: 26px 44px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 23px 0 22px;
+      letter-spacing: -0.5px;
       display: block;
       color: map-get($color,white);
-      font-size: 13px;
-      font-weight: bold;
-      line-height: 17px;
-    }
-    &:first-child {
-      a {
-        padding: 18px 20px;
-      }
     }
     &:hover{
       background-color: map-get($color,blue-a);
@@ -100,6 +87,11 @@
     ul {
       display: none;
     }
+  }
+  .home{
+    width:66px; 
+    border-left: none;
+    background-color: map-get($color,blue-a);
   }
 }
 .one{
@@ -111,109 +103,119 @@
   }
 }
 .two{
-  padding-right: 9px;
+  position: relative;
   &:hover{
     .drop-down-two{
       display: block;
     }
   }
 }
+.galery3{
+  position: relative;
+  &:hover{
+    .drop-lv2{
+      display: block;
+    }
+  }
+}
 .drop-down-one {
   display: none;
-  width: 100%;
   background-color: map-get($color,color-nav);
   position: absolute;
-  z-index: 99;
-  top: 100.68%;
-  left: .3%;
+  top: 69px;
+  z-index: 3;
   li {
     display: block;
+    border-left: none;
     a {
       &:hover {
         color: map-get($color,black);
       }
     }
+    &:hover{
+      background-color: map-get($color,color-nav);
+    }
   }
 }
 .drop-down-two {
-  width: 12.2%;
+  display: none;
   background-color: map-get($color,color-nav);
   position: absolute;
-  z-index: 99;
-  top: 10.9%;
-  left: 21.8%;
+  top: 69px;
+  z-index: 3;
   li {
     display: block;
-    a{
+    border-left: none;
+    a {
       &:hover {
-      color: map-get($color,black);
+        color: map-get($color,black);
       }
+    }
+    &:hover{
+      background-color: map-get($color,color-nav);
     }
   }
 }
 .drop-lv2{
-  background-color:map-get($color,black);
-  border-left: 1px solid map-get($color,black);
-  border-right: 1px solid map-get($color,black);
+  display: none;
+  border-right: none;
   position: absolute;
   z-index: 99;
-  top: 18%;
-  left: 106%;
+  top: -35px;
+  left: 169px;
   li {
     display: block;
     background-color: map-get($color,black);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    border-right: none;
     a {
       &:hover {
         color: map-get($color,yellow-a);
       }
-      
+    }
+    &:hover{
+      background-color: map-get($color,black);
     }
   }
 }
-.search{
+#search-form{
   border-left: 1px solid map-get($color,blue-d);
   position: relative;
   input{
-    height: 39px;
+    width: 210px;
+    margin: 16px 20px 0px 33px;
+    padding-right: 40px;
+    padding-left: 10px;
     border: none;
+    height: 39px;
+    box-shadow: inset 1px 1px 0 map-get($color,button-blue);
+    border-radius: 10px;
     color: map-get($color,white);
-    margin-top: 17px;
-    margin-left: 80px;
-    margin-right: 41px;
-    width: 240px;
     border-radius: 10px;
     background-color: map-get($color,blue-c);
     box-shadow: inset 1px 1px 0 map-get($color,blue-c);
+    outline: none;
+    &:focus{
+      border-bottom: 1px solid map-get($color,white);
+      border-right: 1px solid map-get($color,white);
+    }
   }
   input[type="submit"]{
     position: absolute;
-    top: 0;
-    right: 0;
-    height: 35px;
-    width: 59px;
-    border:none;
-    background-color: map-get($color,blue-c);
+    right: 26px;
+    top: 26px;
+    margin: 0;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 22px;
+    height: 23px;
+    background: url(../images/search.png) no-repeat;
     box-shadow: none;
-  }
-  .fa-search{
-    position: absolute;
-    top: 24px;
-    right: 45px;
-    font-size: 25px;
-    color: white;
-    cursor:pointer;
+    transition: none;
     &:hover{
-      color:map-get($color,black);
+      background-position: 0 -43px;
     }
   }
 }
-.home{
-  background-color: map-get($color,blue-a);
-  a{
-    i{
-      font-size: 26px;
-    }
-  }
-}
+

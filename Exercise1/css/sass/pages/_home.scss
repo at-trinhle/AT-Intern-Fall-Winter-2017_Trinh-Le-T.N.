@@ -1,6 +1,8 @@
 .content-images{
   width:95%;
-  padding-left:4.5%;
+  padding-left:4.3%;
+  position: relative;
+  z-index: 99;
 }
 .show-img{
   position: relative;
@@ -16,22 +18,31 @@
       font-size: 50px;
       font-weight: 600;
     }
+    p{
+      margin-top: -18px;
+    }
   }
   .back-next{
     position: absolute;
-    left: 88px;
-    top: 290px;
+    left: 82px;
+    top: 281px;
     button{
       width: 53px;
       height: 53px;
-      font-size: 30px;
-      background-color: map-get($color,button-white);
-      color: black;
+      border: none;
+      cursor: pointer;
+    }
+    .prev{
+      background: url(../images/nav-slider.png) no-repeat;
       &:hover{
-        background-color: map-get($color,yellow-a);
-        color: map-get($color,white);
+        background-position: 0 -54px;
       }
-      top: 282px;
+    }
+    .next{
+      background: url(../images/nav-slider.png) no-repeat -53px 0;
+      &:hover{
+        background-position: -53px -54px;
+      }
     }
   }
 }
@@ -39,16 +50,18 @@
   width:90.5%;
   margin-left:4.5%;
   height: 70px;
-  margin-top: 10px;
+  margin-top: 4px;
   background-color: map-get($color,button-white);
   .feature{
     font-weight: 300;
-    padding: 16px 34px;
+    padding: 19px 28px;
     font-size: 25px;
     color: map-get($color,color-feature);
   }
 }
 .image-show{
+  position: relative;
+  z-index: 99;
   width:90.5%;
   margin-left:4.5%;
   display: block;
@@ -70,29 +83,27 @@
 }
 .next-img{
   position: relative;
+  position: relative;
+  z-index: 99;
   button{    
     width: 53px;
-    height: 53px;
-    background-color:map-get($color,button-white);
+    height: 73px;
     position: absolute;
-    right: 35px;
+    right: 47px;
     top: -120px;
+    border: none;
+    cursor: pointer;
+    background: url(../images/nav.png) no-repeat -50px 0;
     &:hover{
-      background-color: map-get($color,yellow-a);
-      i{
-        color: map-get($color,white);
-      }
+      background-position: -50px -73px;
     }
     i{
-    font-size: 40px;
-    color: black;
-    font-weight: 200 !important;
     }
   }
 }
 .some-news{
   width:95%;
-  padding-left:4.5%;
+  padding-left:4.3%;
   display: block;
   margin-top: 29px;
   margin-left: 2px;
@@ -124,6 +135,8 @@
     font-size: 14px;
   }
   button{
+    position: relative;
+    z-index: 99;
     width:89px;
     height: 38px;
     margin-left: 33px;
@@ -168,7 +181,7 @@
 }
 .some-news{
   width:95%;
-  padding-left:4.5%;
+  padding-left:4.3%;
   display: block;
   margin-top: 29px;
   margin-left: 2px;
@@ -238,8 +251,10 @@
   background-color: map-get($color,more-d);
 }
 .content-container{
+  position: relative;
+  z-index: 99;
   width:95%;
-  padding-left:4.5%;
+  padding-left:4.3%;
   display: block;
   margin-top: 60px;
   margin-bottom: 20px;
@@ -262,8 +277,8 @@
     color: map-get($color,color-feature);
   }
   button{
-    margin: 24px 0px 50px 2px;
-    padding-left: 2px;
+    margin: 24px 0px 50px 0px;
+    padding-left: 4px;
     &:hover{
       background-color: map-get($color,button-blue);
     }
