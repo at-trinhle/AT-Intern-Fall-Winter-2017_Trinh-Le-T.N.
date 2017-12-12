@@ -55,14 +55,14 @@
       }
     }
     a:hover{
-      background-color: map-get($color,color-nav);
+      background-color: map-get($color,primary);
     }
   }
 }
 .bottom-head{
   display: flex;
   flex-direction: row;
-  background-color: map-get($color,color-nav);
+  background-color: map-get($color,primary);
 }
 .wrap-ul{
   display: flex;
@@ -120,7 +120,7 @@
 }
 .drop-down-one {
   display: none;
-  background-color: map-get($color,color-nav);
+  background-color: map-get($color,primary);
   position: absolute;
   top: 69px;
   z-index: 3;
@@ -133,13 +133,13 @@
       }
     }
     &:hover{
-      background-color: map-get($color,color-nav);
+      background-color: map-get($color,primary);
     }
   }
 }
 .drop-down-two {
   display: none;
-  background-color: map-get($color,color-nav);
+  background-color: map-get($color,primary);
   position: absolute;
   top: 69px;
   z-index: 3;
@@ -152,7 +152,7 @@
       }
     }
     &:hover{
-      background-color: map-get($color,color-nav);
+      background-color: map-get($color,primary);
     }
   }
 }

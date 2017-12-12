@@ -1,9 +1,10 @@
 .btn{
   cursor: pointer;
-  width: 89px;
+  font-size: 14px;
+  width: 90px;
   height: 38px;
   color: map-get($color,white);
   border: none;
-  background-color: map-get($color,button-more);
+  background-color: map-get($color,secondary);
   font-weight: bold;
 }

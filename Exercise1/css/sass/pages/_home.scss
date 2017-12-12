@@ -66,14 +66,14 @@
   margin-left:4.5%;
   display: block;
   height: 190px;
-  background-color: map-get($color,background-slide-img);
+  background-color: map-get($color,secondary);
   text-align: center;
   .one-img{
-    padding: 25px 15px;;
+    padding: 25px 7px;;
     display: inline-block;
     img{
-      width: 187px;
-      height: 130px;
+      width: 198px;
+      height: 133px;
       border: 7px solid map-get($color,white);
       &:hover{
         border: 7px solid map-get($color,yellow-a);
@@ -134,16 +134,14 @@
     line-height: 23px;
     font-size: 14px;
   }
-  button{
+  a{
     position: relative;
     z-index: 99;
-    width:89px;
-    height: 38px;
+    padding: 9px 24px;
     margin-left: 33px;
     margin-top: 4px;
     background-color: map-get($color,white);
     span{
-      margin-left: 26px;
       line-height: 16px;
       font-size: 14px;
     }
@@ -160,8 +158,8 @@
       color: map-get($color,more-d);
     }
   }
-  button:hover{
-    background-color: map-get($color,button-more);
+  a:hover{
+    background-color: map-get($color,secondary);
     span{
       color: white;
     }
@@ -212,9 +210,8 @@
     line-height: 23px;
     font-size: 14px;
   }
-  button{
+  a{
     span{
-      margin-left: 26px;
       line-height: 16px;
       font-size: 14px;
     }
@@ -231,8 +228,8 @@
       color: map-get($color,more-d);
     }
   }
-  button:hover{
-    background-color: map-get($color,button-more);
+  a:hover{
+    background-color: map-get($color,secondary);
     span{
       color: white;
     }
@@ -257,7 +254,7 @@
   padding-left:4.3%;
   display: block;
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 110px;
 }
 .content-left{
   width: 48%;
@@ -276,9 +273,8 @@
     padding: 0px 5px 2px 8px;
     color: map-get($color,color-feature);
   }
-  button{
-    margin: 24px 0px 50px 0px;
-    padding-left: 4px;
+  a{
+    padding: 9px 24px;
     &:hover{
       background-color: map-get($color,button-blue);
     }
@@ -316,7 +312,7 @@
   color: map-get($color,p);
   margin-top: 35px;
   line-height: 23px;
-  margin-bottom: 25px;
+  margin-bottom: 63px;
   font-family: Arial;
   font-size: 14px;
   padding-left: 2px;
@@ -329,6 +325,7 @@
   .one-row{
     display: flex;
     flex-direction: row;
+    margin-bottom: 70px;
   }
 }
 .one-block-something{
@@ -364,9 +361,10 @@
     color: map-get($color,p);
     font-size: 14px;
     font-family: Arial;
+    margin-bottom: 27px;
   }
-  button{
-    margin: 23px 0px 48px 0px;
+  a{
+    padding: 9px 24px;
     &:hover{
       background-color: map-get($color,button-blue);
     }

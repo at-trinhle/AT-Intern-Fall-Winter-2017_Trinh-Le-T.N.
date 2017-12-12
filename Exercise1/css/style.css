@@ -218,13 +218,13 @@ body {
   width: 100%;
   padding-left: 11%;
   padding-top: 7%;
-  padding-bottom: 4.25%;
+  padding-bottom: 47px;
   color: #ffffff;
   position: relative;
   z-index: 99; }
 
 .logo-footer {
-  width: 44.4%;
+  width: 45%;
   display: inline-block; }
   .logo-footer a {
     display: flex;
@@ -234,7 +234,7 @@ body {
       left: 54px;
       top: 106px; }
 
-.copy-righ {
+.copy-right {
   position: absolute;
   top: 116px;
   font-size: 15px;
@@ -242,7 +242,7 @@ body {
   font-size: 14px;
   line-height: 14px;
   color: #d9bb4b; }
-  .copy-righ span:hover {
+  .copy-right span:hover {
     color: #37bdc6; }
 
 .about-us {
@@ -272,12 +272,12 @@ body {
 
 .back-top {
   position: fixed;
-  bottom: 36px;
-  right: 16px;
+  bottom: 21px;
+  right: 11px;
   width: 50px;
   height: 50px;
   border: none;
-  background-color: #5ecdd4; }
+  background-color: #38d3d8; }
   .back-top:hover {
     background-color: #363636;
     cursor: pointer;
@@ -287,15 +287,17 @@ body {
     transition: background-color 1s ease-out; }
   .back-top i {
     color: #ffffff;
-    font-size: 40px; }
+    font-size: 50px;
+    font-weight: 800; }
 
 .btn {
   cursor: pointer;
-  width: 89px;
+  font-size: 14px;
+  width: 90px;
   height: 38px;
   color: #ffffff;
   border: none;
-  background-color: #2a2e34;
+  background-color: #2d3239;
   font-weight: bold; }
 
 a {
@@ -363,14 +365,14 @@ img {
   margin-left: 4.5%;
   display: block;
   height: 190px;
-  background-color: #2d333a;
+  background-color: #2d3239;
   text-align: center; }
   .image-show .one-img {
-    padding: 25px 15px;
+    padding: 25px 7px;
     display: inline-block; }
     .image-show .one-img img {
-      width: 187px;
-      height: 130px;
+      width: 198px;
+      height: 133px;
       border: 7px solid #ffffff; }
       .image-show .one-img img:hover {
         border: 7px solid #d9bb4b; }
@@ -420,29 +422,27 @@ img {
     padding: 20px 20px 20px 33px;
     line-height: 23px;
     font-size: 14px; }
-  .one-block-new button {
+  .one-block-new a {
     position: relative;
     z-index: 99;
-    width: 89px;
-    height: 38px;
+    padding: 9px 24px;
     margin-left: 33px;
     margin-top: 4px;
     background-color: #ffffff; }
-    .one-block-new button span {
-      margin-left: 26px;
+    .one-block-new a span {
       line-height: 16px;
       font-size: 14px; }
-    .one-block-new button .color-one {
+    .one-block-new a .color-one {
       color: #7ed7dd; }
-    .one-block-new button .color-two {
+    .one-block-new a .color-two {
       color: #7eddc1; }
-    .one-block-new button .color-three {
+    .one-block-new a .color-three {
       color: #e1c96f; }
-    .one-block-new button .color-four {
+    .one-block-new a .color-four {
       color: #d685a2; }
-  .one-block-new button:hover {
-    background-color: #2a2e34; }
-    .one-block-new button:hover span {
+  .one-block-new a:hover {
+    background-color: #2d3239; }
+    .one-block-new a:hover span {
       color: white; }
 
 .one-block-new:first-child {
@@ -486,21 +486,20 @@ img {
     padding: 20px 20px 20px 33px;
     line-height: 23px;
     font-size: 14px; }
-  .one-block-new button span {
-    margin-left: 26px;
+  .one-block-new a span {
     line-height: 16px;
     font-size: 14px; }
-  .one-block-new button .color-one {
+  .one-block-new a .color-one {
     color: #7ed7dd; }
-  .one-block-new button .color-two {
+  .one-block-new a .color-two {
     color: #7eddc1; }
-  .one-block-new button .color-three {
+  .one-block-new a .color-three {
     color: #e1c96f; }
-  .one-block-new button .color-four {
+  .one-block-new a .color-four {
     color: #d685a2; }
-  .one-block-new button:hover {
-    background-color: #2a2e34; }
-    .one-block-new button:hover span {
+  .one-block-new a:hover {
+    background-color: #2d3239; }
+    .one-block-new a:hover span {
       color: white; }
 
 .one-block-new:first-child {
@@ -522,7 +521,7 @@ img {
   padding-left: 4.3%;
   display: block;
   margin-top: 60px;
-  margin-bottom: 20px; }
+  margin-bottom: 110px; }
 
 .content-left {
   width: 48%;
@@ -539,10 +538,9 @@ img {
     margin-bottom: 35px;
     padding: 0px 5px 2px 8px;
     color: #181818; }
-  .content-left button {
-    margin: 24px 0px 50px 0px;
-    padding-left: 4px; }
-    .content-left button:hover {
+  .content-left a {
+    padding: 9px 24px; }
+    .content-left a:hover {
       background-color: #43bbbf; }
 
 .img-para {
@@ -573,7 +571,7 @@ img {
   color: #787878;
   margin-top: 35px;
   line-height: 23px;
-  margin-bottom: 25px;
+  margin-bottom: 63px;
   font-family: Arial;
   font-size: 14px;
   padding-left: 2px; }
@@ -585,7 +583,8 @@ img {
   padding-left: 45px; }
   .content-right .one-row {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    margin-bottom: 70px; }
 
 .one-block-something {
   width: 48%;
@@ -613,10 +612,11 @@ img {
     line-height: 23px;
     color: #787878;
     font-size: 14px;
-    font-family: Arial; }
-  .one-block-something button {
-    margin: 23px 0px 48px 0px; }
-    .one-block-something button:hover {
+    font-family: Arial;
+    margin-bottom: 27px; }
+  .one-block-something a {
+    padding: 9px 24px; }
+    .one-block-something a:hover {
       background-color: #43bbbf; }
 
 /*# sourceMappingURL=style.css.map */
