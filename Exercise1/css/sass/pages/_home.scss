@@ -1,6 +1,4 @@
 .content-images{
-  width:95%;
-  padding-left:4.3%;
   position: relative;
   z-index: 99;
 }
@@ -9,8 +7,8 @@
   h2{
     font-size: 50px;
     position: absolute;
-    left: 86px;
-    top: 139px;
+    left: 7%;
+    top: 30%;
     font-weight: 300;
     color: map-get($color,blue-c);
     strong{
@@ -24,8 +22,8 @@
   }
   .back-next{
     position: absolute;
-    left: 82px;
-    top: 281px;
+    left: 7%;
+    top: 63%;
     button{
       width: 53px;
       height: 53px;
@@ -39,6 +37,7 @@
       }
     }
     .next{
+      margin-left: -2px;
       background: url(../images/nav-slider.png) no-repeat -53px 0;
       &:hover{
         background-position: -53px -54px;
@@ -47,10 +46,8 @@
   }
 }
 .feature-space{
-  width:90.5%;
-  margin-left:4.5%;
   height: 70px;
-  margin-top: 4px;
+  margin-top: 2px;
   background-color: map-get($color,button-white);
   .feature{
     font-weight: 300;
@@ -62,18 +59,17 @@
 .image-show{
   position: relative;
   z-index: 99;
-  width:90.5%;
-  margin-left:4.5%;
-  display: block;
-  height: 190px;
   background-color: map-get($color,secondary);
-  text-align: center;
-  .one-img{
-    padding: 25px 7px;;
-    display: inline-block;
+}
+.image-slide{
+  margin-left: 4.5%;
+  list-style: none;
+  display: flex;
+  li{
+    padding: 25px 7px 35px 0;
     img{
-      width: 198px;
-      height: 133px;
+      width: 97%;
+      height: 95%;
       border: 7px solid map-get($color,white);
       &:hover{
         border: 7px solid map-get($color,yellow-a);
@@ -89,7 +85,7 @@
     width: 53px;
     height: 73px;
     position: absolute;
-    right: 47px;
+    right: -17px;
     top: -120px;
     border: none;
     cursor: pointer;
@@ -102,21 +98,19 @@
   }
 }
 .some-news{
-  width:95%;
-  padding-left:4.3%;
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-top: 29px;
-  margin-left: 2px;
-  text-align-last: justify;
 }
 .one-block-new{
-  display: inline-block;
-  width: 272px;
-  height: 430px;
+}
+[class*='blocks-']{
+  min-height: 430px;
+  margin: 0 11px;
   h5{
     color: map-get($color,white);
     text-align: left;
-    padding: 22px 122px 20px 33px;
+    padding: 22px 122px 20px 32px;
     font-size: 25px;
     line-height: 21px;
     font-weight: 300;
@@ -161,103 +155,35 @@
   a:hover{
     background-color: map-get($color,secondary);
     span{
-      color: white;
+      color: map-get($color,white);
     }
   }
+
 }
-.one-block-new:first-child{
+.blocks-events{
   background-color: map-get($color,more-a);
+  margin-left: 0;
+  margin-right: 20px;
 }
-.one-block-new:nth-child(2){
+.blocks-dest{
   background-color: map-get($color,more-b);
 }
-.one-block-new:nth-child(3){
+.blocks-tours{
   background-color: map-get($color,more-c);
 }
-.one-block-new:nth-child(4){
+.blocks-booking{
   background-color: map-get($color,more-d);
-}
-.some-news{
-  width:95%;
-  padding-left:4.3%;
-  display: block;
-  margin-top: 29px;
-  margin-left: 2px;
-  text-align-last: justify;
-}
-.one-block-new{
-  display: inline-block;
-  width: 272px;
-  height: 430px;
-  h5{
-    color: map-get($color,white);
-    text-align: left;
-    padding: 22px 122px 20px 33px;
-    font-size: 25px;
-    line-height: 21px;
-    font-weight: 300;
-    span{
-      font-weight: 600;
-    }
-  }
-  img{
-    width: 272px;
-  }
-  p{
-    color: map-get($color,white);
-    font-family: Arial;
-    padding: 20px 20px 20px 33px;
-    line-height: 23px;
-    font-size: 14px;
-  }
-  a{
-    span{
-      line-height: 16px;
-      font-size: 14px;
-    }
-    .color-one{
-      color: map-get($color,more-a);
-    }
-    .color-two{
-      color: map-get($color,more-b);
-    }
-    .color-three{
-      color: map-get($color,more-c);
-    }
-    .color-four{
-      color: map-get($color,more-d);
-    }
-  }
-  a:hover{
-    background-color: map-get($color,secondary);
-    span{
-      color: white;
-    }
-  }
-}
-.one-block-new:first-child{
-  background-color: map-get($color,more-a);
-}
-.one-block-new:nth-child(2){
-  background-color: map-get($color,more-b);
-}
-.one-block-new:nth-child(3){
-  background-color: map-get($color,more-c);
-}
-.one-block-new:nth-child(4){
-  background-color: map-get($color,more-d);
+  margin-left: 21px;
+  margin-right: 0;
 }
 .content-container{
   position: relative;
   z-index: 99;
-  width:95%;
-  padding-left:4.3%;
   display: block;
   margin-top: 60px;
   margin-bottom: 110px;
 }
 .content-left{
-  width: 48%;
   display: inline-block;
   h2{
     color: #5ecdd4;
@@ -312,13 +238,12 @@
   color: map-get($color,p);
   margin-top: 35px;
   line-height: 23px;
-  margin-bottom: 63px;
+  margin-bottom: 57px;
   font-family: Arial;
   font-size: 14px;
   padding-left: 2px;
 }
 .content-right{
-  width: 52%;
   display: inline-block;
   float: right;
   padding-left: 45px;
@@ -368,5 +293,39 @@
     &:hover{
       background-color: map-get($color,button-blue);
     }
+  }
+}
+/* For tablets: */
+@media screen and (min-width: 600px) and (max-width: 767px){
+  // [class*='blocks-']{
+  //   width: 100%;
+  // }
+  .show-img{
+    position: relative;
+    h2{
+      font-size: 30px;
+      position: absolute;
+      left: 25px;
+      top: 50px;
+      line-height: 46px;
+      font-weight: 300;
+      color: map-get($color,blue-c);
+      strong{
+        color: map-get($color,white);
+        font-size: 30px;
+        font-weight: 600;
+      }
+      p{
+        margin-top: -18px;
+      }
+    }
+  }
+  .back-next{
+    position: absolute;
+    right: 23px;
+    bottom: 23px;
+  }
+  .feature-space{
+    margin-top: 32px;
   }
 }

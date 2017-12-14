@@ -1,17 +1,15 @@
 .footer{
   background-color: map-get($color,secondary);
   display: block;
-  width:100%;
-  padding-left:11%;
-  padding-top: 7%;
+  padding-top: 102px;
   padding-bottom: 47px;
   color: map-get($color,white);
   position: relative;
   z-index: 99;
 }
 .logo-footer{
-  width: 45%;
   display: inline-block;
+  margin-right: 200px;
   a{
     display: flex;
     flex-direction: row;
@@ -34,12 +32,13 @@
   color: map-get($color,blue-b);
   }
 }
+.contact{
+  margin-left: 51%;
+  margin-top: -20px;
+}
 .about-us{
-  padding-top: 9px;
   display: inline-block;
-  width: 170px;
-  height: 210px;
-  margin-right:2.25%;
+  margin-right: 9%;
   h2{
     font-weight: 300 !important;
     font-size: 25px;
@@ -73,7 +72,7 @@
   border: none;
   background-color: map-get($color,primary);
   &:hover{
-    background-color: #363636;
+    background-color: map-get($color,black);
     cursor: pointer;
     -webkit-transition: background-color 1s ease-out;
     -moz-transition: background-color 1s ease-out;

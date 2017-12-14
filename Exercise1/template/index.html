@@ -3,181 +3,233 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="../images/favicon-ico.png">
   <title>Travelino | travel agency</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/font-awesome.min.css">
 </head>
 <body>
-  <header class="header">
-    <div class="top-head">
-      <div class="top-left">
-        <img src="../images/logo.png">
-        <p>TRAVEL AGENCY</p>
-      </div>
-      <div class="top-right">
-        <ul class="list-icon">
-          <li><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a><i class="fa fa-wifi" aria-hidden="true"></i></a></li>
-          <li><a><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="bottom-head">
-      <ul class="wrap-ul">
-        <li class="home"><a href="#"><img src="../images/home.png"></a></li>
-        <li class="one">
-          <a href="#">ABOUT US</a>
-          <ul class="drop-down-one">
-            <li><a href="#">TESTIMONIALS</a></li>
-            <li><a href="#">ARCHIVES</a></li>
-            <li><a href="#">FAQS</a></li>
-          </ul>
-        </li>
-        <li class="two">
-          <a href="#">GALLERY</a>
-            <ul class="drop-down-two">
-              <li><a href="#">GALLERY 2</a></li>
-              <li class="galery3">
-                <a href="#">GALLERY 3</a>
-                <ul class="drop-lv2">
-                  <li><a href="#">CATEGORY 1</a></li>
-                  <li class="drop-li"><a href="#">CATEGORY 2</a></li>
-                  <li><a href="#">CATEGORY 3</a></li>
-                </ul>
-              </li>
-              <li><a href="#">GALLERY 4</a></li>
+    <header class="row header">
+      <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 top-head">
+          <div class="top-left">
+            <img src="../images/logo.png">
+            <p>TRAVEL AGENCY</p>
+          </div>
+          <div class="top-right">
+            <ul class="list-icon">
+              <li><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a><i class="fa fa-wifi" aria-hidden="true"></i></a></li>
+              <li><a><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
             </ul>
-        </li>
-        <li><a href="#">EVENTS</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">CONTACTS</a></li>
-      </ul>
-      <form id="search-form" action="" method="post"">
-        <input type="text">
-        <input type="submit" name="" value="">
-      </form>
-    </div>
-  </header>
-  <section class="content-images">
-    <div class="slide-show">
-      <div class="show-img">
-        <img src="../images/slide3.jpg">
-        <h2><strong>CONSECTETUER</strong><p>STARTING FROM: $299.99</p></h2>
-        <div class="back-next">
-          <button class="prev">
-            <span></span>
+          </div>
+        </div>
+        <!-- class home responive -->
+        <div class="col-sm-12 col-12 submenu-home">
+          <button class="bars-menu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
           </button>
-          <button class="next">
-            <span></span>
-          </button>
+          <ul class="bars-nav">
+            <li><a href="#">Home</a></li>
+            <li class="bars-sub-main">
+              <a href="#">About us</a>
+              <ul class="drop">
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Archives</a></li>
+                <li><a href="#">Faqs</a></li>
+              </ul>
+            </li>
+            <li class="bars-sub-main">
+              <a href="#">Gallery</a>
+                <ul class="drop">
+                  <li><a href="#">Gallery 2</a></li>
+                  <li class="bars-galery3">
+                    <a href="#">Gallery 3</a>
+                    <ul class="bars-galery3-lv2">
+                      <li><a href="#">Category 1</a></li>
+                      <li><a href="#">Category 2</a></li>
+                      <li><a href="#">Category 3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Gallery 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12 col-md-12 bottom-head">
+          <ul class="col-lg-9 col-md-9 col-sm-12 col-9 nav-ul">
+            <li class="home"><a href="#"><img src="../images/home.png"></a></li>
+            <li class="sub-menu">
+              <a href="#">ABOUT US</a>
+              <ul class="drop-down">
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">ARCHIVES</a></li>
+                <li><a href="#">FAQS</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="#">GALLERY</a>
+                <ul class="drop-down">
+                  <li><a href="#">GALLERY 2</a></li>
+                  <li class="galery3">
+                    <a href="#">GALLERY 3</a>
+                    <ul class="drop-lv2">
+                      <li><a href="#">CATEGORY 1</a></li>
+                      <li><a href="#">CATEGORY 2</a></li>
+                      <li><a href="#">CATEGORY 3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">GALLERY 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACTS</a></li>
+          </ul>
+          <form class="col-lg-3 col-md-3 col-sm-3 col-3 search-form" action="" method="post"">
+            <input type="text">
+            <input type="submit" name="" value="">
+          </form>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="feature-space">
-    <h2 class="feature">FEATURED</h2>
-  </section>
-  <section class="image-show">
-    <div class="one-img">
-      <img src="../images/image1.jpg">
-    </div>
-    <div class="one-img">
-      <img src="../images/Depositphotos_4474020_original-199x128.jpg">
-    </div>
-    <div class="one-img">
-      <img src="../images/Depositphotos_3.jpg">
-    </div>
-    <div class="one-img">
-      <img src="../images/image4.jpg">
-    </div>
-    <div class="one-img">
-      <img src="../images/images5.jpg">
-    </div>
-  </section>
-  <section class="next-img">
-    <button>
-      <span></span>
-    </button>
-  </section>
-  <section class="some-news">
-    <article class="one-block-new">
-      <h5>
-        NEWS<br><span>& EVENTS</span>
-      </h5>
-      <img src="../images/new-event.jpg">
-      <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
-      <a class="btn" href="#"><span class="color-one">MORE</span></a>
-    </article>
-    <article class="one-block-new">
-      <h5>
-        NEWS<br><span>DESTINATIONS</span>
-      </h5>
-      <img src="../images/new-2.jpg">
-      <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
-      <a class="btn" href="#"><span class="color-two">MORE</span></a>
-    </article>
-    <article class="one-block-new">
-      <h5>
-        POPULAR<br><span>TOURS</span>
-      </h5>
-      <img src="../images/new3.jpg">
-      <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
-      <a class="btn" href="#"><span class="color-three">MORE</span></a>
-    </article>
-    <article class="one-block-new">
-      <h5>
-        BOOKING<br><span>ONLINE</span>
-      </h5>
-      <img src="../images/new4.jpg">
-      <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
-      <a  class="btn" href="#"><span class="color-four">MORE</span></a>
-    </article>
-  </section>
-  <section class="content-container">
-    <section class="content-left">
-      <h2>HELLO THERE!</h2>
-      <h3>WELCOME TO OUR SITE</h3>
-      <div class="img-para">
-        <img src="../images/girl-img.png">
-        <div class="right-para">
-          <h4>PHASELLUS TURPIS ORG PELLENTE DOLOR AVEL</h4>
-          <p>Lorem ipsum dolor sit amet, cons ctet adipiscing. Duis eros ligula la quiseuis in dignisim atne liquam quis consectet magna liquam sed nibh condimentum.</p>
-        </div>
-      </div>
-      <p class="para-only">Lorem ipsum dolor sit amet, consete ctetur adipiscing. Duis eros ligula la quiseuismod dignisim atne liquam quis consectetur magna liquam sed nibh condimentum. ligula con eges. Curabitur eget massa neque, non laoreet purus. Etiam id eros in dultricies posu a mauris. Sed accumsan placerat ultricies.</p>
-      <a class="btn" href="#">MORE</a>
-    </section>
-    <section class="content-right">
-      <div class="one-row">
-        <section class="one-block-something">
-          <h2>24/7 CLIENT<br><span class="first-color">SUPPORT</span></h2>
-          <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
-          <a class="btn" href="#">MORE</a>
-        </section>
-        <section class="one-block-something">
-          <h2>100% SATISFACTION<br><span class="second-color">GUARANTEE</span></h2>
-          <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
-          <a class="btn" href="#">MORE</a>
+    </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <section class="col-lg-12 col-md-12 col-sm-12 col-12 content-images">
+          <div class="slide-show">
+            <div class="show-img">
+              <img src="../images/slide3.jpg">
+              <h2><strong>CONSECTETUER</strong><p>STARTING FROM: $299.99</p></h2>
+              <div class="back-next">
+                <button class="prev">
+                  <span></span>
+                </button>
+                <button class="next">
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
-      <div class="one-row">
-        <section class="one-block-something">
-          <h2>VIEW<br><span class="three-color">OUR GALLERY</span></h2>
-          <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
-          <a class="btn" href="#">MORE</a>
-        </section>
-        <section class="one-block-something">
-          <h2>TOP<br><span class="four-color">SERVICES</span></h2>
-          <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
-          <a class="btn" href="#">MORE</a>
+      <div class="row">
+        <section class="col-lg-12 col-md-12 col-sm-12 col-12 feature-space">
+          <h2 class="feature">FEATURED</h2>
         </section>
       </div>
-    </section>
-  </section>
-  <footer class="footer">
-    <div class="logo-footer">
+      <div class="row">
+        <section class="col-lg-12 col-md-12 col-sm-12 col-12 image-show">
+          <ul class="col-lg-11 col-md-11 col-sm-11 col-11 image-slide">
+            <li><img src="../images/image1.jpg"></li>
+            <li><img src="../images/Depositphotos_4474020_original-199x128.jpg"></li>
+            <li><img src="../images/Depositphotos_3.jpg"></li>
+            <li><img src="../images/image4.jpg"></li>
+            <li><img src="../images/images5.jpg"></li>
+          </ul>
+        </section>
+        <section class="next-img">
+          <button>
+            <span></span>
+          </button>
+        </section>
+      </div>
+      <div class="row">
+        <section class="col-lg-12 col-md-12 col-sm-12 col-12 some-news">
+          <article class="col-lg-3 col-md-3 col-sm-12 col-12 one-block-new">
+            <div class="blocks-events">
+              <h5>
+              NEWS<br><span>& EVENTS</span>
+              </h5>
+              <img src="../images/new-event.jpg">
+              <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
+              <a class="btn" href="#"><span class="color-one">MORE</span></a>
+            </div>
+          </article>
+          <article class="col-lg-3 col-md-3 col-sm-12 col-12 one-block-new">
+            <div class="blocks-dest">
+              <h5>
+                NEWS<br><span>DESTINATIONS</span>
+              </h5>
+              <img src="../images/new-2.jpg">
+              <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
+              <a class="btn" href="#"><span class="color-two">MORE</span></a>
+            </div>
+          </article>
+          <article class="col-lg-3 col-md-3 col-sm-12 col-12 one-block-new">
+            <div class="blocks-tours">
+              <h5>
+                POPULAR<br><span>TOURS</span>
+              </h5>
+              <img src="../images/new3.jpg">
+              <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
+              <a class="btn" href="#"><span class="color-three">MORE</span></a>
+            </div>
+          </article>
+          <article class="col-lg-3 col-md-3 col-sm-12 col-12 one-block-new">
+            <div class="blocks-booking">
+              <h5>
+                BOOKING<br><span>ONLINE</span>
+              </h5>
+              <img src="../images/new4.jpg">
+              <p>Donec sit amet felis orci. Fuscet mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auct consectetur, nulla est.</p>
+              <a  class="btn" href="#"><span class="color-four">MORE</span></a>
+            </div>
+          </article>
+        </section>
+      </div>
+      <div class="row">
+        <section class="col-lg-12 col-md-12 col-sm-12 col-12 content-container">
+          <section class="col-lg-6 col-md-6 col-sm-6 col-6 content-left">
+            <h2>HELLO THERE!</h2>
+            <h3>WELCOME TO OUR SITE</h3>
+            <div class="img-para">
+              <img src="../images/girl-img.png">
+              <div class="right-para">
+                <h4>PHASELLUS TURPIS ORG PELLENTE DOLOR AVEL</h4>
+                <p>Lorem ipsum dolor sit amet, cons ctet adipiscing. Duis eros ligula la quiseuis in dignisim atne liquam quis consectet magna liquam sed nibh condimentum.</p>
+              </div>
+            </div>
+            <p class="para-only">Lorem ipsum dolor sit amet, consete ctetur adipiscing. Duis eros ligula la quiseuismod dignisim atne liquam quis consectetur magna liquam sed nibh condimentum. ligula con eges. Curabitur eget massa neque, non laoreet purus. Etiam id eros in dultricies posu a mauris. Sed accumsan placerat ultricies.</p>
+            <a class="btn" href="#">MORE</a>
+          </section>
+          <section class="col-lg-6 col-md-6 col-sm-6 col-6 content-right">
+            <div class="one-row">
+              <section class="one-block-something">
+                <h2>24/7 CLIENT<br><span class="first-color">SUPPORT</span></h2>
+                <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
+                <a class="btn" href="#">MORE</a>
+              </section>
+              <section class="one-block-something">
+                <h2>100% SATISFACTION<br><span class="second-color">GUARANTEE</span></h2>
+                <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
+                <a class="btn" href="#">MORE</a>
+              </section>
+            </div>
+            <div class="one-row">
+              <section class="one-block-something">
+                <h2>VIEW<br><span class="three-color">OUR GALLERY</span></h2>
+                <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
+                <a class="btn" href="#">MORE</a>
+              </section>
+              <section class="one-block-something">
+                <h2>TOP<br><span class="four-color">SERVICES</span></h2>
+                <p>Donec sit amet felis orci. Fusce et mollis lectus. Duis in mattis nibh. Mauris tempus, massa non auctor consectetur.</p>
+                <a class="btn" href="#">MORE</a>
+              </section>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="row footer">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-4 logo-footer">
       <a>
         <img src="../images/logo-footer.png">
         <div class="copy-right">
@@ -185,65 +237,67 @@
         </div>
       </a>
     </div>
-    <div class="about-us">
-      <h2>ABOUT US</h2>
-      <ul>
-        <li>
-          <a href="#">Vestibulum iaculis</a>
-        </li>
-        <li>
-          <a href="#">Lacinia est</a>
-        </li>
-        <li>
-          <a href="#">Proin dictum</a>
-        </li>
-        <li>
-          <a href="#">Elementum velit</a>
-        </li>
-        <li>
-          <a href="#">Consequat ante</a>
-        </li>
-       </ul>
-    </div>
-    <div class="about-us">
-      <h2>OUR OFFERS</h2>
-      <ul>
-        <li>
-          <a href="#">Lorem ipsum dolor</a>
-        </li>
-        <li>
-          <a href="#">Sit amet</a>
-        </li>
-        <li>
-          <a href="#">Consectetuer</a>
-        </li>
-        <li>
-          <a href="#">Adipiscing elit</a>
-        </li>
-        <li>
-          <a href="#">Pellentesque sed</a>
-        </li>
-      </ul>
-    </div>
-    <div class="about-us">
-      <h2>CATEGORIES</h2>
-      <ul>
-        <li>
-          <a href="#">Dolor</a>
-        </li>
-        <li>
-          <a href="#">Aliquam congue</a>
-        </li>
-        <li>
-          <a href="#">Fermentum nisl</a>
-        </li>
-        <li>
-          <a href="#">Mauris accumsan</a>
-        </li>
-        <li>
-          <a href="#">Nulla vel diam</a>
-        </li>
-      </ul>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-6 contact">
+      <div class="about-us">
+        <h2>ABOUT US</h2>
+        <ul>
+          <li>
+            <a href="#">Vestibulum iaculis</a>
+          </li>
+          <li>
+            <a href="#">Lacinia est</a>
+          </li>
+          <li>
+            <a href="#">Proin dictum</a>
+          </li>
+          <li>
+            <a href="#">Elementum velit</a>
+          </li>
+          <li>
+            <a href="#">Consequat ante</a>
+          </li>
+         </ul>
+      </div>
+      <div class="about-us">
+        <h2>OUR OFFERS</h2>
+        <ul>
+          <li>
+            <a href="#">Lorem ipsum dolor</a>
+          </li>
+          <li>
+            <a href="#">Sit amet</a>
+          </li>
+          <li>
+            <a href="#">Consectetuer</a>
+          </li>
+          <li>
+            <a href="#">Adipiscing elit</a>
+          </li>
+          <li>
+            <a href="#">Pellentesque sed</a>
+          </li>
+        </ul>
+      </div>
+      <div class="about-us">
+        <h2>CATEGORIES</h2>
+        <ul>
+          <li>
+            <a href="#">Dolor</a>
+          </li>
+          <li>
+            <a href="#">Aliquam congue</a>
+          </li>
+          <li>
+            <a href="#">Fermentum nisl</a>
+          </li>
+          <li>
+            <a href="#">Mauris accumsan</a>
+          </li>
+          <li>
+            <a href="#">Nulla vel diam</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <button class="back-top"><i class="fa fa-angle-up" aria-hidden="true"></i></button> 
   </footer>
