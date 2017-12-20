@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Exercise JS</title>
+  <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <header>
+    <button type="button" class="btn-cart" id="button">
+      <img src="../images/empty-cart-icon.png">
+      <span id="display">0</span>
+   </button>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="product">
+            <h2>Product 1</h2>
+            <img src="../images/download.png">
+            <p>price : $100</p>
+            <button class="btn btn-primary buy" data-id="0" data-name="sp1" data-count="0" id="btn1" href="#" role="button" data-price="100">Buy</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product">
+            <h2>Product 2</h2>
+            <img src="../images/download.png">
+            <p>price : $200</p>
+            <button class="btn btn-primary buy" data-id="1" data-name="sp2" data-count="0" id="btn2" href="#" role="button" data-price="200">Buy</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product">
+            <h2>Product 3</h2>
+            <img src="../images/download.png">
+            <p>price : $300</p>
+            <button class="btn btn-primary buy" data-id="2" data-name="sp3" data-count="0" id="btn3" role="button" data-price="300">Buy</button>
+          </div>
+        </div>
+        <div class="row" id="show-item">
+
+       </div>
+    </div>
+  </main>
+  <footer>
+    
+  </footer>
+  <script>
+    $datas = document.getElementsByClassName ('buy');
+    for (let $i of $datas) {
+      $i.addEventListener ('click', function () {
+        increate ($i);
+      });
+      function increate ($i) {
+        $i.setAttribute ('data-count', Number ($i.getAttribute ('data-count')) + 1);
+        document.getElementById('display').innerHTML = Number(document.getElementById('display').innerHTML) +1;
+        $i.getAttribute('data-count');
+      }
+    }
+    document.getElementById('button').addEventListener('click', showCart);
+
+    function showCart() {
+      var $listCart = '<table class="table"><thead><tr><th scope="col">Name</th><th scope="col">Price</th><th scope="col">Counts</th><th scope="col">Total</th><th>Delete</th></tr></thead>';
+      var name, price, count, total, sum = 0;
+      for (let $i of $datas) {
+        if ($i.getAttribute('data-count') > 0) {
+          name = '<td>' + $i.getAttribute('data-name') + '</td>';
+          price = '<td>' + $i.getAttribute('data-price') + '</td>';
+          count = '<td>' + $i.getAttribute('data-count') + '</td>';
+          total = '<td>' + $i.getAttribute('data-price') * $i.getAttribute('data-count') + '</td>';
+          deletebtn = '<td><button class="btn btn-danger" data-id="'+$i.getAttribute('data-id')+'">Delete</button></td>'
+          $listCart += '<tr>' + name + price + count + total + deletebtn + '</tr>';
+          sum += $i.getAttribute('data-price') * $i.getAttribute('data-count');
+        }
+      }
+      $listCart += '<tr><td></td><td></td><td><strong>Total money: </strong></td><td>' + sum + '</td><td></td></tr></tbody></table>';
+      document.getElementById('show-item').innerHTML = $listCart;
+
+      $del = document.getElementsByClassName('btn-danger');
+      for (let $i of $del){
+        $i.addEventListener('click', function () {
+          var retVal = confirm("Do you want to delete this item ?");
+          if ( retVal == true ){
+            delRow($i);
+            showCart();
+          }
+          else{
+
+         }
+        });
+      } 
+      function delRow($i){
+        $datas = document.getElementsByClassName ('buy');
+        for (let $j of $datas){
+          if ($i.getAttribute('data-id') === $j.getAttribute('data-id')){
+            // alert($j.getAttribute('data-count'));
+            document.getElementById('display').innerHTML = Number(document.getElementById('display').innerHTML) - $j.getAttribute('data-count');
+            $j.setAttribute('data-count',0);
+          }
+        }
+      }
+    }
+  </script>
+</body>
+</html>
