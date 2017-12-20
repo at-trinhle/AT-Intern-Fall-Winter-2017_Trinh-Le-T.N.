@@ -8,23 +8,14 @@
   z-index: 99;
 }
 .logo-footer{
-  display: inline-block;
-  margin-right: 200px;
-  a{
-    display: flex;
-    flex-direction: row;
-    img{
-      position: absolute;
-      left: 54px;
-      top: 106px;
-    }
-  }
+  display: -webkit-box;
 }
 .copy-right{
   position: absolute;
+  display: inline-block;
   top: 116px;
   font-size: 15px;
-  left: 272px;
+  left: 270px;
   font-size: 14px;
   line-height: 14px;
   color: map-get($color,yellow-a);
@@ -33,12 +24,13 @@
   }
 }
 .contact{
-  margin-left: 51%;
+  margin-left: 50%;
   margin-top: -20px;
+  display: block;
 }
 .about-us{
   display: inline-block;
-  margin-right: 9%;
+  padding-right: 4%;
   h2{
     font-weight: 300 !important;
     font-size: 25px;
@@ -84,4 +76,89 @@
     font-size: 50px;
     font-weight: 800;
   }
+}
+@media screen and (min-width: 600px) and (max-width: 767px) {
+.copy-right{
+  position: none;
+}
+.footer{
+  padding-top: 0;
+  padding-left: 60px;
+}
+.copy-right{
+  position: absolute;
+  top: 37px;
+  font-size: 15px;
+  left: 290px;
+}
+.contact{
+  margin-left: 0;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+}
+.about-us{
+  display: inline-block;
+  padding-right: 4%;
+  h2{
+    font-weight: 300 !important;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  ul{
+    list-style: none;
+    font-family: Arial;
+    padding-top: 20px;
+    li{
+      background: url(../images/cat-arrow.png) no-repeat 0 9px;
+      padding-left: 24px;
+      a{
+        margin-left: 7px;
+        color: map-get($color,p);
+        line-height: 34px;
+        font-size: 14px;
+      }
+      a:hover{
+        color: map-get($color,yellow-a);
+      }
+    }
+  }
+}
+} 
+@media screen and (min-width: 768px){
+// .copy-right{
+//   left: 215px;
+// }
+// .contact{
+//   margin-left: 15%;
+//   margin-top: 10px;
+//   display: flex;
+// }
+// .about-us{
+//   display: inline-block;
+//   padding-right: 4%;
+//   h2{
+//     font-weight: 300 !important;
+//     font-size: 25px;
+//     line-height: 25px;
+//   }
+//   ul{
+//     list-style: none;
+//     font-family: Arial;
+//     padding-top: 20px;
+//     li{
+//       background: url(../images/cat-arrow.png) no-repeat 0 9px;
+//       padding-left: 14px;
+//       a{
+//         margin-left: 7px;
+//         color: map-get($color,p);
+//         line-height: 34px;
+//         font-size: 12px;
+//       }
+//       a:hover{
+//         color: map-get($color,yellow-a);
+//       }
+//     }
+//   }
+// }
 }

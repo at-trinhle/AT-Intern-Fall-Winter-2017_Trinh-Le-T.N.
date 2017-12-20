@@ -99,8 +99,7 @@
 }
 .some-news{
   display: flex;
-  justify-content: center;
-  margin-top: 29px;
+  margin-top: 22px;
 }
 .one-block-new{
 }
@@ -119,7 +118,7 @@
     }
   }
   img{
-    width: 272px;
+    width: 100%;
   }
   p{
     color: map-get($color,white);
@@ -296,36 +295,184 @@
   }
 }
 /* For tablets: */
-@media screen and (min-width: 600px) and (max-width: 767px){
-  // [class*='blocks-']{
-  //   width: 100%;
-  // }
-  .show-img{
-    position: relative;
-    h2{
+@media screen and (max-width: 767px) and (min-width: 600px){
+main{
+  margin: 0px 20px;
+  min-height: 3215px;
+}
+.next-img button{
+  top: -100px;
+}
+.show-img{
+  position: relative;
+  h2{
+    font-size: 30px;
+    position: absolute;
+    left: 25px;
+    top: 50px;
+    line-height: 46px;
+    font-weight: 300;
+    color: map-get($color,blue-c);
+    strong{
+      color: map-get($color,white);
       font-size: 30px;
-      position: absolute;
-      left: 25px;
-      top: 50px;
-      line-height: 46px;
-      font-weight: 300;
-      color: map-get($color,blue-c);
-      strong{
-        color: map-get($color,white);
-        font-size: 30px;
-        font-weight: 600;
-      }
-      p{
-        margin-top: -18px;
-      }
+      font-weight: 600;
+    }
+    p{
+      margin-top: -18px;
     }
   }
-  .back-next{
-    position: absolute;
-    right: 23px;
-    bottom: 23px;
+}
+.back-next{
+  position: absolute;
+  right: 23px;
+  bottom: 23px;
+}
+.feature-space{
+  margin-top: 32px;
+}
+.some-news{
+  display: block;
+  width: 100%;
+  margin-top: 22px;
+}
+.one-block-new{
+}
+[class*='blocks-']{
+  min-height: 400px;
+  margin-bottom: 50px;
+  margin: 0;
+  //margin: 0px 20px;
+  h5{
+    font-size: 16px;
+    box-shadow: 1px 2px 0 rgba(0,0,0,0.3);
+    span{
+      font-weight: 600;
+    }
   }
-  .feature-space{
-    margin-top: 32px;
+  img{
+    margin: 20px 220px;
+    width: 272px;
   }
+  p{
+    color: map-get($color,white);
+    font-family: Arial;
+    padding: 0px 20px 30px 33px;
+    line-height: 23px;
+    font-size: 14px;
+  }
+  a{
+    .color-one{
+      color: map-get($color,more-a);
+    }
+    .color-two{
+      color: map-get($color,more-b);
+    }
+    .color-three{
+      color: map-get($color,more-c);
+    }
+    .color-four{
+      color: map-get($color,more-d);
+    }
+  }
+  a:hover{
+    background-color: map-get($color,secondary);
+    span{
+      color: map-get($color,white);
+    }
+  }
+}
+.blocks-events{
+  background-color: map-get($color,more-a);
+  margin-bottom: 55px;
+  h5{
+    background-image: linear-gradient(to bottom,map-get($color,more-a),map-get($color,blue-h));
+  }
+}
+.blocks-dest{
+  background-color: map-get($color,more-b);
+  margin-bottom: 55px;
+  h5{
+    background-image: linear-gradient(to bottom,map-get($color,more-b),map-get($color,blue-i));
+  }
+}
+.blocks-tours{
+  background-color: map-get($color,more-c);
+  margin-bottom: 55px;
+  h5{
+    background-image: linear-gradient(to bottom,map-get($color,more-c),map-get($color,yellow-d));
+  }
+}
+.blocks-booking{
+  background-color: map-get($color,more-d);
+  margin-bottom: 55px;
+  h5{
+    background-image: linear-gradient(to bottom,map-get($color,pink-b),map-get($color,pink-c));
+  }
+}
+
+.content-left{
+  display: block;
+}
+.img-para{
+  display: block;
+}
+.para-only{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.content-right{
+  padding-left: 0;
+  width: 100%;
+  display: block;
+  margin-top: 30px;
+  .one-row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+  }
+}
+.one-block-something{
+  width: 48%;
+  margin-right: 15px;
+  h2{
+    font-weight: 300 !important;
+    color: map-get($color,color-feature);
+    font-size: 25px;
+    line-height: 27px;
+    margin-bottom: 21px;
+    margin-top: 5px;
+    span{
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 25px;
+    }
+    .first-color{
+      color: map-get($color,blue-e);
+    }
+    .second-color{
+      color: map-get($color,blue-f);
+    }
+    .three-color{
+      color: map-get($color,yellow-b);
+    }
+    .four-color{
+      color: map-get($color,pink-a);
+    }
+  }
+  p{
+    line-height: 23px;
+    color: map-get($color,p);
+    font-size: 14px;
+    font-family: Arial;
+    margin-bottom: 27px;
+  }
+  a{
+    padding: 9px 24px;
+    &:hover{
+      background-color: map-get($color,button-blue);
+    }
+  }
+}
+
 }
