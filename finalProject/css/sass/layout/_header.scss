@@ -1,0 +1,127 @@
+a{
+  text-decoration: none;
+}
+.top-head{
+  background-color: map-get($color, secondary);
+  display: flex;
+  .logo-head{
+    padding: 11px 40px;
+    img{
+      width: 144px;
+    }
+  }
+  .devices-head{
+    text-align: center;
+    padding: 10px 0px 10px 70px;
+    img{
+      height: 23px;
+      margin: 0px 15px;
+    }
+  }
+  .right-head{
+    display: flex;
+    a{
+      background-color: map-get($color, green);
+      color: map-get($color, white);
+      padding: 9px 30px;
+      font-size: 17px;
+      line-height: 24px;
+      margin-left: -30px;
+    }
+  }
+}
+.price{
+  padding-top: 6px;
+  margin-left: 29px;
+  span{
+    color: map-get($color, white);
+    font-size: 28px;
+    font-weight: 700;
+    sub{
+      font-size: 10px;
+      position: relative;
+      left: -40px;
+      top: 4px;
+      color: map-get($color, white-b);
+    }
+    sup{
+      color: map-get($color, white-a);
+    }
+  }
+  .sup-money{
+    font-size: 14px;
+    position: relative;
+    top: -11px;
+    left: -4px;
+  }
+  .sup-month{
+    font-size: 12px;
+    position: relative;
+    top: -13px;
+    left: 6px;
+  }
+}
+.center-head{
+  background-image: url(../images/header-watercolor-left.png), url(../images/header-watercolor-right.png);
+  background-repeat: no-repeat,no-repeat;
+  background-position: left top,right top;
+  text-align: center;
+  height: 223px;
+  img{
+    padding-top: 40px;
+    padding-bottom: 55px;
+  }
+}
+.nav-menu{
+  display: flex;
+  list-style: none;
+  padding-left: 20%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 3px double map-get($color, white-c);
+  border-top: 3px double map-get($color, white-c);
+  .menu-item{
+    position: relative;
+    a{
+      color: map-get($color, nav-li);
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+    a:hover{
+      color: map-get($color, nav);
+    }
+    &:hover{
+      .sub-menu{
+        display: block;
+      }
+    }
+  }
+  .menu-item:after{
+    content: "/";
+    color: map-get($color, white-c);
+    padding: 22px;
+  }
+}
+.sub-menu{
+  display: none;
+  list-style: none;
+  position: absolute;
+  width: max-content;
+  top: 30px;
+  left: -25px;
+  z-index: 20;
+  margin-top: 2px;
+  li{
+    padding: 12px 20px;
+    border: 1px solid map-get($color, white-c);
+    background-color: map-get($color,white);
+    a{
+      color: map-get($color, nav-li);
+      font-weight: 600;
+    }
+    a:hover{
+      color: map-get($color, nav);
+    }
+  }
+}

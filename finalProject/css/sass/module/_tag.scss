@@ -1,0 +1,11 @@
+.tag{
+  a{
+    background-color: map-get($color, white);
+    padding: 2px 40px;
+    color: map-get($color, white);
+    font-family: Zeyada;
+    font-size: 27px;
+    font-weight: 400;
+    cursor: text;
+  }
+}
