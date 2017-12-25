@@ -1,92 +1,92 @@
-.content-images{
+.content-images {
   position: relative;
   z-index: 99;
   margin: 0 35px;
 }
-.show-img{
+.show-img {
   position: relative;
-  img{
+  img {
     width: 100%;
   }
-  h2{
+  h2 {
     font-size: 50px;
     position: absolute;
     left: 7%;
     top: 30%;
     font-weight: 300;
     color: map-get($color,blue-c);
-    strong{
+    strong {
       color: map-get($color,white);
       font-size: 50px;
       font-weight: 600;
     }
-    p{
+    p {
       margin-top: -18px;
     }
   }
-  .back-next{
+  .back-next {
     position: absolute;
     left: 7%;
     top: 63%;
-    button{
+    button {
       width: 53px;
       height: 53px;
       border: none;
       cursor: pointer;
     }
-    .prev{
+    .prev {
       background: url(../images/nav-slider.png) no-repeat;
-      &:hover{
+      &:hover {
         background-position: 0 -54px;
       }
     }
-    .next{
+    .next {
       margin-left: -2px;
       background: url(../images/nav-slider.png) no-repeat -53px 0;
-      &:hover{
+      &:hover {
         background-position: -53px -54px;
       }
     }
   }
 }
-.feature-space{
+.feature-space {
   height: 70px;
   margin-top: 2px;
   background-color: map-get($color,button-white);
   margin: 0 35px;
-  .feature{
+  .feature {
     font-weight: 300;
     padding: 19px 28px;
     font-size: 25px;
     color: map-get($color,color-feature);
   }
 }
-.image-show{
+.image-show {
   position: relative;
   margin: 0 35px;
   z-index: 99;
   background-color: map-get($color,secondary);
 }
-.image-slide{
+.image-slide {
   margin-left: 4.5%;
   list-style: none;
   display: flex;
-  li{
+  li {
     padding: 25px 7px 35px 0;
-    img{
+    img {
       width: 97%;
       height: 95%;
       border: 7px solid map-get($color,white);
-      &:hover{
+      &:hover {
         border: 7px solid map-get($color,yellow-a);
       }
     }
   }
 }
-.next-img{
+.next-img {
   position: relative;
   z-index: 99;
-  button{    
+  button {    
     width: 53px;
     height: 73px;
     position: absolute;
@@ -95,106 +95,104 @@
     border: none;
     cursor: pointer;
     background: url(../images/nav.png) no-repeat -50px 0;
-    &:hover{
+    &:hover {
       background-position: -50px -73px;
     }
-    i{
+    i {
     }
   }
 }
-.some-news{
+.some-news {
   display: flex;
   margin-top: 40px;
-  // margin-left: -15px;
-  // margin-right: -15px;
 }
-.one-block-new{
+.one-block-new {
   
 }
-[class*='blocks-']{
+[class*='blocks-'] {
   min-height: 430px;
   margin-left: 15px;
   margin-right: 15px;
-  h5{
+  h5 {
     color: map-get($color,white);
     text-align: left;
     padding: 22px 122px 20px 32px;
     font-size: 25px;
     line-height: 21px;
     font-weight: 300;
-    span{
+    span {
       font-weight: 600;
     }
   }
-  img{
+  img {
     width: 100%;
   }
-  p{
+  p {
     color: map-get($color,white);
     font-family: Arial;
     padding: 20px 20px 20px 33px;
     line-height: 23px;
     font-size: 14px;
   }
-  a{
+  a {
     position: relative;
     z-index: 99;
     padding: 9px 24px;
     margin-left: 33px;
     margin-top: 4px;
     background-color: map-get($color,white);
-    span{
+    span {
       line-height: 16px;
       font-size: 14px;
     }
-    .color-one{
+    .color-one {
       color: map-get($color,more-a);
     }
-    .color-two{
+    .color-two {
       color: map-get($color,more-b);
     }
-    .color-three{
+    .color-three {
       color: map-get($color,more-c);
     }
-    .color-four{
+    .color-four {
       color: map-get($color,more-d);
     }
   }
-  a:hover{
+  a:hover {
     background-color: map-get($color,secondary);
-    span{
+    span {
       color: map-get($color,white);
     }
   }
 
 }
-.blocks-events{
+.blocks-events {
   background-color: map-get($color,more-a);
 }
-.blocks-dest{
+.blocks-dest {
   background-color: map-get($color,more-b);
 }
-.blocks-tours{
+.blocks-tours {
   background-color: map-get($color,more-c);
 }
-.blocks-booking{
+.blocks-booking {
   background-color: map-get($color,more-d);
 }
-.content-container{
+.content-container {
   padding: 70px 0px;
   position: relative;
   z-index: 99;
   display: block;
 }
-.content-left{
+.content-left {
   display: inline-block;
-  h2{
+  h2 {
     color: #5ecdd4;
     font-size: 45px;
     line-height: 42px;
     margin: 2px 0px 2px 1px;
   }
-  h3{
+  h3 {
     font-weight: 300 !important;
     font-size: 25px;
     line-height: 28px;
@@ -202,32 +200,32 @@
     padding: 0px 5px 2px 8px;
     color: map-get($color,color-feature);
   }
-  a{
+  a {
     padding: 9px 24px;
     &:hover{
       background-color: map-get($color,button-blue);
     }
   }
 }
-.img-para{
+.img-para {
   display: block;
-  img{
+  img {
     display: inline;
     width: 48%;
     margin-left: 3px;
   }
-  .right-para{
+  .right-para {
     width: 46.5%;
     display: inline;
     float: right;
-    h4{
+    h4 {
       font-weight: 300 !important;
       font-size: 20px;
       color: map-get($color,color-feature);
       padding-left: 3px;
       line-height: 24px;
     }
-    p{
+    p {
       color: map-get($color,p);
       font-family: Arial;
       margin-top: 15px;
@@ -237,7 +235,7 @@
     }
   }
 }
-.para-only{
+.para-only {
   color: map-get($color,p);
   margin-top: 35px;
   line-height: 23px;
@@ -246,17 +244,17 @@
   font-size: 14px;
   padding-left: 2px;
 }
-.content-right{
+.content-right {
   display: inline-block;
   float: right;
   padding-left: 45px;
-  .one-row{
+  .one-row {
     display: flex;
     flex-direction: row;
     margin-bottom: 70px;
   }
 }
-.one-block-something{
+.one-block-something {
   width: 48%;
   margin-right: 15px;
   h2{
@@ -271,123 +269,123 @@
       font-size: 25px;
       line-height: 25px;
     }
-    .first-color{
+    .first-color {
       color: map-get($color,blue-e);
     }
-    .second-color{
+    .second-color {
       color: map-get($color,blue-f);
     }
-    .three-color{
+    .three-color {
       color: map-get($color,yellow-b);
     }
-    .four-color{
+    .four-color {
       color: map-get($color,pink-a);
     }
   }
-  p{
+  p {
     line-height: 23px;
     color: map-get($color,p);
     font-size: 14px;
     font-family: Arial;
     margin-bottom: 27px;
   }
-  a{
+  a {
     padding: 9px 24px;
-    &:hover{
+    &:hover {
       background-color: map-get($color,button-blue);
     }
   }
 }
-@media screen and (max-width: 1023px){
-.content-images{
+@media screen and (max-width: 1023px) {
+.content-images {
   position: relative;
   z-index: 99;
   margin: 0 35px;
 }
-.show-img{
+.show-img {
   position: relative;
   img{
     width: 100%;
   }
-  h2{
+  h2 {
     font-size: 40px;
     position: absolute;
     left: 7%;
     top: 18%;
   }
 }
-.next-img{
+.next-img {
   position: relative;
   z-index: 99;
-  button{    
+  button {    
     position: absolute;
     right: 18px;
     top: -100px;
   }
 }
-[class*='blocks-']{
+[class*='blocks-'] {
   h5{
     padding: 15px 122px 15px 30px;
     font-size: 16px;
   }
-  img{
+  img {
     width: 100%;
   }
-  p{
+  p {
     padding: 20px 20px 20px 30px;
     line-height: 23px;
     font-size: 12px;
   }
 }
-.content-container{
+.content-container {
   padding: 70px 0px;
   position: relative;
   z-index: 99;
   display: block;
 }
-.img-para{
+.img-para {
   display: block;
   img{
     display: inline;
     width: 50%;
     margin-left: 3px;
   }
-  .right-para{
-    h4{
+  .right-para {
+    h4 {
       font-size: 14px;
     }
-    p{
+    p {
       margin-top: 4px;
       font-size: 13px;
     }
   }
 }
-.para-only{
+.para-only {
   font-size: 13px;
 }
-.content-right{
-  .one-row{
+.content-right {
+  .one-row {
     margin-bottom: 30px;
   }
 }
-.one-block-something{
-  h2{
+.one-block-something {
+  h2 {
     font-size: 22px;
     margin-bottom: 8px;
-    span{
+    span {
       font-size: 20px;
       line-height: 25px;
     }
   }
-  p{
+  p {
     font-size: 13px;
     margin-bottom: 20px;
   }
 }
 }
 /* For tablets: */
-@media screen and (max-width: 767px){
-main{
+@media screen and (max-width: 767px) {
+main {
   margin: 0px 20px;
   min-height: 3215px;
 }
@@ -395,13 +393,13 @@ main{
   top: -100px;
   right: -17px;
 }
-.content-images{
+.content-images {
   width: 100%;
   margin-left: auto;
 }
 .show-img {
   position: relative;
-  h2{
+  h2 {
     font-size: 30px;
     position: absolute;
     left: 25px;
@@ -409,12 +407,12 @@ main{
     line-height: 46px;
     font-weight: 300;
     color: map-get($color,blue-c);
-    strong{
+    strong {
       color: map-get($color,white);
       font-size: 30px;
       font-weight: 600;
     }
-    p{
+    p {
       margin-top: -18px;
     }
   }
@@ -438,10 +436,10 @@ main{
   width: 100%;
   margin-top: 22px;
 }
-.one-block-new{
+.one-block-new {
 
 }
-[class*='blocks-']{
+[class*='blocks-'] {
   min-height: 400px;
   margin-bottom: 30px;
   margin-left: -15px;
@@ -452,16 +450,15 @@ main{
     span{
       font-weight: 600;
     }
-  }
-  .pad-img{
+  } 
+  .pad-img {
     text-align: center;
     padding: 20px 0px;
   }
-  img{
-    // margin: 20px 220px;
+  img {
     width: 272px;
   }
-  p{
+  p {
     color: map-get($color,white);
     font-family: Arial;
     padding: 0px 20px 30px 33px;
@@ -469,64 +466,64 @@ main{
     font-size: 14px;
   }
 }
-.blocks-events{
+.blocks-events {
   background-color: map-get($color,more-a);
-  h5{
+  h5 {
     background-image: linear-gradient(to bottom,map-get($color,more-a),map-get($color,blue-h));
   }
 }
-.blocks-dest{
+.blocks-dest {
   background-color: map-get($color,more-b);
-  h5{
+  h5 {
     background-image: linear-gradient(to bottom,map-get($color,more-b),map-get($color,blue-i));
   }
 }
-.blocks-tours{
+.blocks-tours {
   background-color: map-get($color,more-c);
-  h5{
+  h5 {
     background-image: linear-gradient(to bottom,map-get($color,more-c),map-get($color,yellow-d));
   }
 }
-.blocks-booking{
+.blocks-booking {
   background-color: map-get($color,more-d);
-  h5{
+  h5 {
     background-image: linear-gradient(to bottom,map-get($color,pink-b),map-get($color,pink-c));
   }
 }
-.content-left{
+.content-left {
   display: block;
 }
-.img-para{
+.img-para {
   display: block;
 }
-.para-only{
+.para-only {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.content-right{
+.content-right {
   padding-left: 0;
   width: 100%;
   display: block;
   margin-top: 30px;
-  .one-row{
+  .one-row {
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
   }
 }
-.one-block-something{
-  h2{
+.one-block-something {
+  h2 {
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 10px;
     margin-top: 5px;
-    span{
+    span {
       font-weight: bold;
       font-size: 25px;
       line-height: 25px;
     }
   }
-  p{
+  p {
     line-height: 23px;
     color: map-get($color,p);
     font-size: 14px;
@@ -534,56 +531,64 @@ main{
     margin-bottom: 27px;
     width: 90%;
   }
-  a{
+  a {
     padding: 9px 24px;
-    &:hover{
+    &:hover {
       background-color: map-get($color,button-blue);
     }
   }
 }
-.content-container{
+.content-container {
   padding: 20px 0px;
 }
-.one-row{
+.one-row {
   margin-right: -50px;
 }
 }
-@media screen and (max-width: 599px){
-.content-left{
+@media screen and (max-width: 599px) {
+.show-img {
+  h2 {
+    top: 25px;
+  }
+  .back-next {
+    top: 58%;
+  }
+}
+.content-left {
   display: block;
 }
-.img-para{
+.img-para {
   display: block;
-  img{
+  img {
     display: inline;
     width: 100%;
   }
-  .right-para{
+  .right-para {
     width: 100%;
-    h4{
+    h4 {
       font-size: 20px;
       text-align: center;
     }
-    p{
+    p {
       font-size: 13px;
     }
   }
 }
-.para-only{
+.para-only {
   font-size: 13px;
 }
-.content-right{
+.content-right {
   display: block;
-  .one-row{
+  .one-row {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
   }
 }
-.one-block-something{
+.one-block-something {
   width: 50%;
   margin-right: 15px;
-  h2{
+  h2 {
     font-size: 20px;
     span{
       font-size: 20px;
@@ -592,5 +597,29 @@ main{
   p{
     font-size: 13px;
   }
+}
+}
+@media screen and (min-width: 1280px) {
+.content-images {
+  margin: 0;
+}
+.show-img {
+  padding: 0 0 0 35px;
+  width: max-content;
+}
+.feature-space {
+  margin: 0 -5px 0 35px;
+}
+.image-show {
+  margin: 0 -5px 0 35px;
+}
+.next-img button {
+  right: -22px;
+}
+.some-news {
+  margin: 40px -35px 0 5px;
+}
+.content-container {
+  padding: 70px 0px 70px 20px;
 }
 }

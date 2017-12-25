@@ -1,19 +1,19 @@
-.header{
+.header {
   position: relative;
   z-index: 120;
   margin: 0 20px;
 }
-.top-head{
+.top-head {
   display:block;
   padding-top: 72px;
   margin-bottom: 40px;
 }
-.top-left{
+.top-left {
   display:inline-block;
-  img{
+  img {
     padding-top: 8px;
   }
-  p{    
+  p {    
     font-weight: 300 !important;
     color: map-get($color,d3);
     padding-left: 73px;
@@ -23,16 +23,16 @@
     line-height: 15px;
   }
 }
-.top-right{
+.top-right {
   display:inline-block;
   float:right;
   padding-top: 20px;
 }
-.list-icon{
+.list-icon {
   list-style: none;
-  li{
+  li {
     display:inline-block;
-    a{
+    a {
       border-radius: 50%;
       color: white;
       background-color: map-get($color,black-a);
@@ -42,39 +42,42 @@
       display: block;
       width: 36px;
       height: 35px;
-      i{
+      i {
         text-align: center;
         padding: 10px 10px;
       }
-      .fa-facebook{
+      .fa-facebook {
         padding: 10px 14px;
       }
-      .fa-twitter{
+      .fa-twitter {
         padding: 10px 12px;
       }
     }
-    a:hover{
+    a:hover {
       background-color: map-get($color,primary);
     }
   }
 }
-.bottom-head{
+.bottom-head {
   display: flex;
   flex-direction: row;
   background-color: map-get($color,primary);
   margin: 0 15px;
 }
-.nav-ul{
+.menu-toggle {
+  display: none;
+}
+.nav-ul {
   display: flex;
   list-style: none;
   border-right: 1px solid map-get($color,blue-b);
-  li{
+  li {
     cursor:pointer;
     width: 160px;
     border-left: 1px solid map-get($color,blue-d);
     border-right: 1px solid map-get($color,blue-b);
     text-align: center;
-    a{
+    a {
       font-size: 14px;
       font-weight: 600;
       padding: 23px 0 22px;
@@ -82,45 +85,45 @@
       display: block;
       color: map-get($color,white);
     }
-    &:hover{
+    &:hover {
       background-color: map-get($color,blue-a);
     }
     ul {
       display: none;
     }
   }
-  .home{
+  .home {
     width:67px; 
     border-left: none;
     background-color: map-get($color,blue-a);
   }
-  li:last-child{
+  li:last-child {
     border-right: none;
   }
 }
-.sub-menu{
+.sub-menu {
   position: relative;
-  &:hover{
-    .drop-down{
+  &:hover {
+    .drop-down {
       display:block;
     }
   }
 }
-.submenu-home{
+.submenu-home {
   display: none;
 }
-.sub-menu{
+.sub-menu {
   position: relative;
-  &:hover{
-    .drop-down{
+  &:hover {
+    .drop-down {
       display: block;
     }
   }
 }
-.galery3{
+.galery3 {
   position: relative;
-  &:hover{
-    .drop-lv2{
+  &:hover {
+    .drop-lv2 {
       display: block;
     }
   }
@@ -139,7 +142,7 @@
         color: map-get($color,black);
       }
     }
-    &:hover{
+    &:hover {
       background-color: map-get($color,primary);
     }
   }
@@ -158,12 +161,12 @@
         color: map-get($color,black);
       }
     }
-    &:hover{
+    &:hover {
       background-color: map-get($color,primary);
     }
   }
 }
-.drop-lv2{
+.drop-lv2 {
   display: none;
   border-right: none;
   position: absolute;
@@ -179,17 +182,17 @@
         color: map-get($color,yellow-a);
       }
     }
-    &:hover{
+    &:hover {
       background-color: map-get($color,black);
     }
   }
 }
-.search-form{
+.search-form {
   width: 303px;
   border-left: 1px solid map-get($color,blue-d);
   display: flex;
   position: relative;
-  input{
+  input {
     width: 242px;
     margin: 16px 20px 0px 29px;
     border: none;
@@ -200,12 +203,12 @@
     background-color: map-get($color,blue-c);
     box-shadow: inset 1px 1px 0 map-get($color,blue-c);
     outline: none;
-    &:focus{
+    &:focus {
       border-bottom: 1px solid map-get($color,white);
       border-right: 1px solid map-get($color,white);
     }
   }
-  input[type="submit"]{
+  input[type="submit"] {
     position: absolute;
     right: 26px;
     top: 26px;
@@ -219,95 +222,73 @@
     background: url(../images/search.png) no-repeat;
     box-shadow: none;
     transition: none;
-    &:hover{
+    &:hover {
       background-position: 0 -43px;
     }
   }
 }
 @media screen and (max-width: 850px) and (min-width: 768px) {
-.search-form{
-  input{
+.search-form {
+  input {
     margin: auto;
     width: 150px;
   }
 }
 }
 /* For tablets: */
-@media screen and (max-width: 767px){
-a{
+@media screen and (max-width: 767px) {
+a {
   color: map-get($color, white);
 }
+.list-icon {
+  display: none;
+}
 //nav hamberger
-.bottom-head{
-  display: flex;
-  flex-direction: row;
-  background-color: map-get($color,primary);
+.menu-toggle {
+  display: inline;
+  position: relative;
+  //margin:0 0 0 60px;
+  font-size: 40px;
+  &:active {
+    .nav-ul {
+      display: block;
+    }
+  }
+}
+.bottom-head {
+  display: block;
+  list-style: none;
+  text-align: center;
+  width: 100%;
   margin: 0;
 }
-.nav-ul{
-  display: block;
-  li{
-    display: none;
+.nav-ul {
+  display: none;
+  width: 100%;
+  li {
+    display: block;
     cursor:pointer;
-    width: 160px;
-    border-left: 1px solid map-get($color,blue-d);
-    border-right: 1px solid map-get($color,blue-b);
+    border-left: none;
+    border-right: none;
     text-align: center;
-    a{
-      font-size: 14px;
-      font-weight: 600;
-      padding: 23px 0 22px;
-      letter-spacing: -0.5px;
-      display: block;
-      color: map-get($color,white);
-    }
-    &:hover{
-      background-color: map-get($color,blue-a);
-    }
     ul {
       display: none;
     }
   }
-  .home{
+  .home {
     display: none;
   }
-  li:last-child{
+  li:last-child {
     border-right: none;
   }
 }
-.sub-menu{
-  position: relative;
-  &:hover{
-    .drop-down{
-      display:block;
-    }
-  }
-}
-.submenu-home{
-  display: none;
-}
-.sub-menu{
-  position: relative;
-  &:hover{
-    .drop-down{
-      display: block;
-    }
-  }
-}
-.galery3{
-  position: relative;
-  &:hover{
-    .drop-lv2{
-      display: block;
-    }
-  }
-}
 .drop-down {
   display: none;
   background-color: map-get($color,primary);
   position: absolute;
-  top: 69px;
-  z-index: 3;
+  top: 0px;
+  right: 100px;
+  z-index: 100;
   li {
     display: block;
     border-left: none;
@@ -316,93 +297,46 @@ a{
         color: map-get($color,black);
       }
     }
-    &:hover{
+    &:hover {
       background-color: map-get($color,primary);
     }
   }
 }
-.drop-down {
-  display: none;
-  background-color: map-get($color,primary);
-  position: absolute;
-  top: 69px;
-  z-index: 3;
-  li {
-    display: block;
-    border-left: none;
-    a {
-      &:hover {
-        color: map-get($color,black);
-      }
-    }
-    &:hover{
-      background-color: map-get($color,primary);
-    }
-  }
-}
-.drop-lv2{
+.drop-lv2 {
   display: none;
   border-right: none;
   position: absolute;
-  z-index: 99;
-  top: -35px;
-  left: 169px;
+  z-index: 101;
+  top: 0;
+  left: 85px;
   li {
     display: block;
-    background-color: map-get($color,black);
+    background-color: map-get($color,primary);
     border-right: none;
     a {
       &:hover {
         color: map-get($color,yellow-a);
       }
     }
-    &:hover{
-      background-color: map-get($color,black);
+    &:hover {
+      background-color: map-get($color,primary);
     }
   }
 }
-.search-form{
-  width: 303px;
-  border-left: 1px solid map-get($color,blue-d);
-  display: flex;
-  position: relative;
+.search-form {
+  display: inline;
+  border-left: none;
   input{
-    width: 242px;
-    margin: 16px 20px 0px 29px;
-    border: none;
-    height: 39px;
-    box-shadow: inset 1px 1px 0 map-get($color,button-blue);
-    border-radius: 10px;
-    color: map-get($color,white);
-    background-color: map-get($color,blue-c);
-    box-shadow: inset 1px 1px 0 map-get($color,blue-c);
-    outline: none;
-    &:focus{
-      border-bottom: 1px solid map-get($color,white);
-      border-right: 1px solid map-get($color,white);
-    }
+    margin: 16px 20px 19px 29px;
   }
   input[type="submit"]{
     position: absolute;
     right: 26px;
-    top: 26px;
-    margin: 0;
-    padding: 0;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 22px;
-    height: 23px;
-    background: url(../images/search.png) no-repeat;
-    box-shadow: none;
-    transition: none;
-    &:hover{
-      background-position: 0 -43px;
-    }
+    top: 0px;
   }
 }
 // end hamberger
-.top-left{
+.top-left {
   display:inline-block;
   margin-top: -41px;
   img{
@@ -418,80 +352,29 @@ a{
     line-height: 15px;
   }
 }
-.top-right{
+.top-right {
   position: absolute;
   display: inline-block;
   top: 102px;
   left: 30px;
 }
 }
-/* For mobile phones: */
-@media (max-width: 599px){
-a{
-  color: map-get($color, white);
-}
-.bottom-head{
-  display: none;
-}
-.submenu-home{
-  display: block;
-  margin-top: 70px;
-  height: 80px;
-  margin-bottom: 20px;
-  background-color: map-get($color, primary);
-  .bars-menu{
-    background-color: map-get($color,primary);
-    position: absolute;    
-    width: 79px;
-    height: 79px;
-    border: none;
-    //box-shadow: 2px 2px 0 rgba(29,29,34,0.4);
-    z-index: 1000;
-    i{
-      font-size: 40px;
-      color: map-get($color, white);
-    }
+// For mobile
+@media screen and (max-width: 599px) {
+.bottom-head {
+  text-align: left;
+  padding: 0 30px;
+  ul {
+    a {
+      font-size: 13px;
+   }
   }
 }
-.search{
-  position: relative;
-  padding-top:17px;
-  padding-left: 450px;
-  input{
-    position: absolute;
-    left: 120px;
-    width: 265px;
-    &:focus{
-      border-bottom: 1px solid map-get($color,white);
-      border-right: 1px solid map-get($color,white);
-    }
-  }
-  input[type="submit"]{
-    position: absolute;
-    left: 350px;
-    top: 30px;
-  }
+.drop-down {
+  right: 80px;
 }
-.top-left{
-  display:inline-block;
-  margin-top: -41px;
-  img{
-    padding-top: 8px;
-  }
-  p{    
-    font-weight: 300 !important;
-    color: map-get($color,d3);
-    padding-left: 73px;
-    position: relative;
-    top: -21px;
-    font-size: 15px;
-    line-height: 15px;
-  }
+.drop-lv2 {
+  right: 95px;
+  width: max-content;
 }
-.top-right{
-  position: absolute;
-  display: inline-block;
-  top: 102px;
-  left: 0;
-} 
 }

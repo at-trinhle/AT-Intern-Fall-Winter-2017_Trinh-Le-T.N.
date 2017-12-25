@@ -1,61 +1,58 @@
-.footer{
+.footer {
   background-color: map-get($color,secondary);
   display: block;
-  padding-top: 102px;
-  padding-bottom: 47px;
+  padding: 102px 0 47px 0;
   color: map-get($color,white);
   position: relative;
   z-index: 99;
 }
-.logo-footer{
+.logo-footer {
   display: block;
 }
-.copy-right{
+.copy-right {
   position: absolute;
   display: inline-block;
   top: 116px;
-  font-size: 15px;
   left: 260px;
   font-size: 14px;
   line-height: 14px;
   color: map-get($color,yellow-a);
-  span:hover{
+  span:hover {
   color: map-get($color,blue-b);
   }
 }
-.contact{
-  margin-left: 47%;
-  margin-top: -40px;
+.contact {
+  margin: -40px 0 0 47%;
   display: block;
 }
-.about-us{
+.about-us {
   display: inline-block;
   padding-right: 4%;
-  h2{
+  h2 {
     font-weight: 300 !important;
     font-size: 25px;
     line-height: 25px;
   }
-  ul{
+  ul {
     list-style: none;
     font-family: Arial;
     padding-top: 20px;
-    li{
+    li {
       background: url(../images/cat-arrow.png) no-repeat 0 9px;
       padding-left: 24px;
-      a{
+      a {
         margin-left: 7px;
         color: map-get($color,p);
         line-height: 34px;
         font-size: 14px;
       }
-      a:hover{
+      a:hover {
         color: map-get($color,yellow-a);
       }
     }
   }
 }
-.back-top{
+.back-top {
   position: fixed;
   bottom: 21px;
   right: 11px;
@@ -63,7 +60,7 @@
   height: 50px;
   border: none;
   background-color: map-get($color,primary);
-  &:hover{
+  &:hover {
     background-color: map-get($color,black);
     cursor: pointer;
     -webkit-transition: background-color 1s ease-out;
@@ -71,49 +68,51 @@
     -o-transition: background-color 1s ease-out;
     transition: background-color 1s ease-out;  
   }
-  i{
+  i {
     color: map-get($color,white);
     font-size: 50px;
     font-weight: 800;
+    position: relative;
+    z-index: 99999;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 950px){
-.logo-footer{
+.logo-footer {
   padding-left: 200px;
 }
-.copy-right{
+.copy-right {
   top: 110px;
   left: 500px;
 }
-.contact{
+.contact {
   margin-left: 0;
   margin-top: 20px;
   display: block;
   width: 100%;
   padding-left: 140px;
 }
-.about-us{
+.about-us {
   display: inline-block;
   padding-right: 4%;
-  h2{
+  h2 {
     font-weight: 300 !important;
     font-size: 25px;
     line-height: 25px;
   }
-  ul{
+  ul {
     list-style: none;
     font-family: Arial;
     padding-top: 20px;
-    li{
+    li {
       background: url(../images/cat-arrow.png) no-repeat 0 9px;
       padding-left: 24px;
-      a{
+      a {
         margin-left: 7px;
         color: map-get($color,p);
         line-height: 34px;
         font-size: 14px;
       }
-      a:hover{
+      a:hover {
         color: map-get($color,yellow-a);
       }
     }
@@ -121,97 +120,105 @@
 } 
 }
 @media screen and (max-width: 767px) {
-.copy-right{
+.copy-right {
   position: none;
 }
-.footer{
+.footer {
   padding-top: 0;
   padding-left: 60px;
 }
-.copy-right{
+.copy-right {
   position: absolute;
   top: 37px;
   font-size: 15px;
   left: 290px;
 }
-.contact{
+.contact {
   margin-left: 0;
   margin-top: 20px;
   display: block;
   width: 100%;
 }
 }
-@media screen and (max-width: 600px){
-.copy-right{
+@media screen and (max-width: 600px) {
+.copy-right {
   position: none;
 }
-.logo-footer{
+.logo-footer {
   padding-top: 30px;
 }
-.footer{
+.footer {
   padding-top: 0;
   padding-left: 60px;
 }
-.copy-right{
+.copy-right {
   position: absolute;
   top: 37px;
   font-size: 15px;
   left: 310px;
 }
-.about-us{
+.about-us {
   display: inline-block;
   padding-right: 4%;
-  h2{
+  h2 {
     font-size: 18px;
   }
-  ul{
+  ul {
     padding-top: 15px;
-    li{
-      a{
+    li {
+      a {
         font-size: 13px;
       }
-      a:hover{
+      a:hover {
         color: map-get($color,yellow-a);
       }
     }
   }
 }
 }
-@media screen and (min-width: 760px) and (max-width: 767px){
-.logo-footer{
+@media screen and (min-width: 760px) and (max-width: 767px) {
+.logo-footer {
 padding-top: 30px;
 }
-.copy-right{
+.copy-right {
 position: absolute;
 top: 40px;
 font-size: 15px;
 left: 310px;
 } 
 }
-@media screen and (max-width: 599px){
-.logo-footer{
+@media screen and (max-width: 599px) {
+.logo-footer {
 padding-top: 30px;
 }
-.copy-right{
+.copy-right {
   font-size: 11px;
 }
 .contact {
   margin-left: 0px;
   display: grid;
 }
-.about-us{
+.about-us {
   display: inline-block;
   padding-right: 4%;
-  h2{
+  h2 {
     font-size: 18px;
   }
-  ul{
-    li{
+  ul {
+    li {
       padding-left: 15px;
-      a{
+      a {
         font-size: 13px;
       }
     }
   }
 } 
+}
+@media screen and (min-width: 1280px) {
+.footer {
+  padding: 102px 0px 47px 30px;
+}
+.copy-right {
+  left: 300px;
+}
 }
