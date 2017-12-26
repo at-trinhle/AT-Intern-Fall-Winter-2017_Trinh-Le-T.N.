@@ -58,7 +58,7 @@
     }
   }
 }
-.bottom-head {
+.navigation {
   display: flex;
   flex-direction: row;
   background-color: map-get($color,primary);
@@ -67,7 +67,7 @@
 .menu-toggle {
   display: none;
 }
-.nav-ul {
+.main-menu {
   display: flex;
   list-style: none;
   border-right: 1px solid map-get($color,blue-b);
@@ -247,22 +247,23 @@ a {
 .menu-toggle {
   display: inline;
   position: relative;
-  //margin:0 0 0 60px;
-  font-size: 40px;
+  font-size: 30px;
+  border: none;
+  background-color: map-get($color, primary);
   &:active {
-    .nav-ul {
+    .main-menu {
       display: block;
     }
   }
 }
-.bottom-head {
+.navigation {
   display: block;
   list-style: none;
   text-align: center;
   width: 100%;
   margin: 0;
 }
-.nav-ul {
+.main-menu {
   display: none;
   width: 100%;
   li {
@@ -361,7 +362,7 @@ a {
 }
 // For mobile
 @media screen and (max-width: 599px) {
-.bottom-head {
+.navigation {
   text-align: left;
   padding: 0 30px;
   ul {

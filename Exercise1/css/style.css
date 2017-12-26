@@ -86,7 +86,7 @@ body {
     .list-icon li a:hover {
       background-color: #38d3d8; }
 
-.bottom-head {
+.navigation {
   display: flex;
   flex-direction: row;
   background-color: #38d3d8;
@@ -95,32 +95,32 @@ body {
 .menu-toggle {
   display: none; }
 
-.nav-ul {
+.main-menu {
   display: flex;
   list-style: none;
   border-right: 1px solid #37bdc6; }
-  .nav-ul li {
+  .main-menu li {
     cursor: pointer;
     width: 160px;
     border-left: 1px solid #91e5e9;
     border-right: 1px solid #37bdc6;
     text-align: center; }
-    .nav-ul li a {
+    .main-menu li a {
       font-size: 14px;
       font-weight: 600;
       padding: 23px 0 22px;
       letter-spacing: -0.5px;
       display: block;
       color: #ffffff; }
-    .nav-ul li:hover {
+    .main-menu li:hover {
       background-color: #00c8d0; }
-    .nav-ul li ul {
+    .main-menu li ul {
       display: none; }
-  .nav-ul .home {
+  .main-menu .home {
     width: 67px;
     border-left: none;
     background-color: #00c8d0; }
-  .nav-ul li:last-child {
+  .main-menu li:last-child {
     border-right: none; }
 
 .sub-menu {
@@ -236,31 +236,33 @@ body {
   .menu-toggle {
     display: inline;
     position: relative;
-    font-size: 40px; }
-    .menu-toggle:active .nav-ul {
+    font-size: 30px;
+    border: none;
+    background-color: #38d3d8; }
+    .menu-toggle:active .main-menu {
       display: block; }
 
-  .bottom-head {
+  .navigation {
     display: block;
     list-style: none;
     text-align: center;
     width: 100%;
     margin: 0; }
 
-  .nav-ul {
+  .main-menu {
     display: none;
     width: 100%; }
-    .nav-ul li {
+    .main-menu li {
       display: block;
       cursor: pointer;
       border-left: none;
       border-right: none;
       text-align: center; }
-      .nav-ul li ul {
+      .main-menu li ul {
         display: none; }
-    .nav-ul .home {
+    .main-menu .home {
       display: none; }
-    .nav-ul li:last-child {
+    .main-menu li:last-child {
       border-right: none; }
 
   .drop-down {
@@ -324,10 +326,10 @@ body {
     top: 102px;
     left: 30px; } }
 @media screen and (max-width: 599px) {
-  .bottom-head {
+  .navigation {
     text-align: left;
     padding: 0 30px; }
-    .bottom-head ul a {
+    .navigation ul a {
       font-size: 13px; }
 
   .drop-down {
