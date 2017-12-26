@@ -1,0 +1,17 @@
+body{
+  height: 100%;
+  color: map-get($color,black);
+  background: url(../images/bg-top.jpg) no-repeat 50% 0;
+  position: relative;
+  font-family: $font-content;
+  width: auto;
+   &::after {
+    content: "";
+    position: absolute;
+    width: auto;
+    background: url(../images/top-shadow.png) repeat-x;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
