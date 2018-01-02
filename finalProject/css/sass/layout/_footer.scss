@@ -1,4 +1,4 @@
-.footer{
+.footer {
   display: block;
   width: 100%;
   padding: 4% 0 33% 8px;
@@ -9,57 +9,57 @@
   background-position: left top,right bottom,left top;
   background-origin: border-box,border-box,padding-box;
   border-top: 10px solid transparent;
-  .contact{
+  .contact {
     display: inline-block;
     float: left;
-    h3{
+    h3 {
       color: map-get($color, a);
       font-family: Zeyada;
       font-size: 45px;
       font-style: normal;
       font-weight: 400;
     }
-    ul{
+    ul {
       list-style: none;
     }
   }
 }
-.about{
-  p{
+.about {
+  p {
     font-family: Open sans;
     line-height: 1.8em;
     margin-bottom: 10px;
     margin-right: 50px;
-    a{
+    a {
       color: map-get($color, secondary);
     }
-    a:hover{
+    a:hover {
       color: map-get($color, primary);
     }
   }
 }
-.links{
-  li{
+.links {
+  li {
     margin-bottom: 30px;
     padding-top: 4px;
-    a{
+    a {
       color: map-get($color, nav-li);
     }
-    a:hover{
+    a:hover {
       color: map-get($color, primary);
     }
-    a:before{
+    a:before {
       content: ">";
       padding-right: 10px;
       font-size: .8em;
     }
   }
 }
-.newsletter{
+.newsletter {
   margin-left: -5px;
-  form{
+  form {
     margin-top: 7px;
-    input{
+    input {
       width: 222px;
       height: 35px;
       padding-left: 11px;
@@ -67,7 +67,7 @@
       border: none;
     }
   }
-  .btn-submit{
+  .btn-submit {
     margin-bottom: 30px;
     a{
       font-size: 27px;
@@ -77,50 +77,50 @@
       background-color: map-get($color, white);
     }
   }
-  .not-robot{
+  .not-robot {
     display: block;
-    .protected{
+    .protected {
       background-color: map-get($color,b);
       display: inline-block;
       padding: 7px 7px 20px;
     }
-    img{
+    img {
       width: 70px;
       position: absolute;    }
   }
 }
-.protected{
-  p{
+.protected {
+  p {
     margin-top: 5px;
     color: map-get($color, white);
     font-size: 13px;
     padding-left: 10px;
     padding-right: 10px;
   }
-  a{
+  a {
     font-size: 10px;
     color: map-get($color, white);
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
   }
 }
-.list-icon{
+.list-icon {
   display: block;
-  li{ 
+  li { 
     display: inline-block;
     margin-left: 18px;
-    a{
+    a {
       color: map-get($color, white);
       padding: 9px;
       background-color: map-get($color, a);
       border-radius: 3px;
       font-size: 16px;
     }
-    a:hover{
+    a:hover {
       background-color: map-get($color, white-b);
     }
-    .fa-facebook{
+    .fa-facebook {
       padding-left: 12px;
       padding-right: 12px;
     }

@@ -1,16 +1,16 @@
-a{
+a {
   text-decoration: none;
 }
-.top-head{
+.top-head {
   background-color: map-get($color, secondary);
   display: flex;
-  .logo-head{
+  .logo-head {
     padding: 11px 40px;
-    img{
+    img {
       width: 144px;
     }
   }
-  .devices-head{
+  .devices-head {
     text-align: center;
     padding: 10px 0px 10px 70px;
     img{
@@ -18,7 +18,7 @@ a{
       margin: 0px 15px;
     }
   }
-  .right-head{
+  .right-head {
     display: flex;
     a{
       background-color: map-get($color, green);
@@ -30,49 +30,49 @@ a{
     }
   }
 }
-.price{
+.price {
   padding-top: 6px;
   margin-left: 29px;
-  span{
+  span {
     color: map-get($color, white);
     font-size: 28px;
     font-weight: 700;
-    sub{
+    sub {
       font-size: 10px;
       position: relative;
       left: -40px;
       top: 4px;
       color: map-get($color, white-b);
     }
-    sup{
+    sup {
       color: map-get($color, white-a);
     }
   }
-  .sup-money{
+  .sup-money {
     font-size: 14px;
     position: relative;
     top: -11px;
     left: -4px;
   }
-  .sup-month{
+  .sup-month {
     font-size: 12px;
     position: relative;
     top: -13px;
     left: 6px;
   }
 }
-.center-head{
+.center-head {
   background-image: url(../images/header-watercolor-left.png), url(../images/header-watercolor-right.png);
   background-repeat: no-repeat,no-repeat;
   background-position: left top,right top;
   text-align: center;
   height: 223px;
-  img{
+  img {
     padding-top: 40px;
     padding-bottom: 55px;
   }
 }
-.nav-menu{
+.nav-menu {
   display: flex;
   list-style: none;
   padding-left: 20%;
@@ -80,30 +80,30 @@ a{
   padding-bottom: 20px;
   border-bottom: 3px double map-get($color, white-c);
   border-top: 3px double map-get($color, white-c);
-  .menu-item{
+  .menu-item {
     position: relative;
-    a{
+    a {
       color: map-get($color, nav-li);
       font-weight: 600;
       font-size: 14px;
       letter-spacing: 2px;
     }
-    a:hover{
+    a:hover {
       color: map-get($color, nav);
     }
-    &:hover{
+    &:hover {
       .sub-menu{
         display: block;
       }
     }
   }
-  .menu-item:after{
+  .menu-item:after {
     content: "/";
     color: map-get($color, white-c);
     padding: 22px;
   }
 }
-.sub-menu{
+.sub-menu {
   display: none;
   list-style: none;
   position: absolute;
@@ -112,15 +112,15 @@ a{
   left: -25px;
   z-index: 20;
   margin-top: 2px;
-  li{
+  li {
     padding: 12px 20px;
     border: 1px solid map-get($color, white-c);
     background-color: map-get($color,white);
-    a{
+    a {
       color: map-get($color, nav-li);
       font-weight: 600;
     }
-    a:hover{
+    a:hover {
       color: map-get($color, nav);
     }
   }

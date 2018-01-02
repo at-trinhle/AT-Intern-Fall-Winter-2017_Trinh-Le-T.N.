@@ -1,13 +1,13 @@
 
-main{
+main {
   position: relative;
 }
-.slide-images{
-  img{
+.slide-images {
+  img {
     max-width: 1286px;
     padding: 50px 0px;
   }
-  &::before{
+  &::before {
     content: " ";
     position: absolute;
     top: 50px;
@@ -18,7 +18,7 @@ main{
     width: 100%;
     display: block;
   }
-  &::after{
+  &::after {
     background-image: url(../images/banner-overlay-bottom-tile.png);
     content: " ";
     position: absolute;
@@ -28,34 +28,35 @@ main{
     background-repeat: round;
     z-index: 100;
     width: 100%;
-    display: block;  }
+    display: block;
+  }
 }
-.para-content{
+.para-content {
   margin-top: -16px;
   text-align: center;
   border-top: 1px solid map-get($color, white-c);
   border-bottom: 1px solid map-get($color, white-c);
-  p{
+  p {
     padding: 40px 0px 47px;
     line-height: 1.8em;
     font-size: 17px;
     letter-spacing: .4px;
   }
 }
-.content{
+.content {
   margin-top: 60px;
   display: flex;
-  .left-content{
+  .left-content {
     width: 72%;
     text-align: center;
     position: relative;
   }
 }
-.one-block{
+.one-block {
   position: relative;
   border: 1px solid map-get($color, white-c);
   margin-bottom: 100px;
-  &::before{
+  &::before {
     content: "";
     background-image: url(../images/blog-corner.png);
     position: absolute;
@@ -65,7 +66,7 @@ main{
     width: 100%;
     background-repeat: no-repeat;
   }
-  &::after{
+  &::after {
     content: " ";
     position: absolute;
     height: 200px;
@@ -76,12 +77,12 @@ main{
     top: 175px;
     left: 0px;
   }
-  img{
+  img {
     height: 410px;
     width: 100%;
     padding-bottom: 45px;
   }
-  .title{
+  .title {
     margin-top: -40px;
     a{
       font-family: Zeyada;
@@ -90,7 +91,7 @@ main{
       color: map-get($color, secondary);
     }
   }
-  .date{
+  .date {
     font-size: 18px;
     font-weight: 400;
     color: map-get($color,primary);
@@ -98,69 +99,69 @@ main{
     margin-bottom: 34px;
     margin-top: -12px;
   }
-  .info{
+  .info {
     text-align: left;
     padding: 0 21px 70px 20px;
     line-height: 1.8em;
     font-size: 14px;
     letter-spacing: .3px;
   }
-  .more-info{
+  .more-info {
     border: none;
     position: absolute;
     bottom: -19px;
     margin-left: 41.3%;
   }
 }
-.notice{
+.notice {
   position: absolute;
   top: 17px;
   right: 30px;
   font-size: 18px;
   color: map-get($color, nav-li);
-  #comment{
+  #comment {
     margin-bottom: 10px;
-    a{
+    a {
       color: map-get($color, white-b);
       padding-right: 22px;
     }
-    a:hover{
+    a:hover {
       color: map-get($color, nav-li);
     }
-    span{
+    span {
       margin-right: 10px;
-      &:hover{
+      &:hover {
         color: map-get($color, primary);
       }
     }
   }
-  #share{
-    a{
+  #share {
+    a {
       color: map-get($color, white-b);
       margin-right: 8px;
     }
-    a:hover{
+    a:hover {
       color: map-get($color, nav-li);
     }
-    span{
+    span {
       font-size: 13px;
-      &:hover{
+      &:hover {
         color: map-get($color, primary);
       }
     }
   }
 }
-.right-bar{
+.right-bar {
   width: 36%;
   margin-left: 40px;
 }
-.block-right{
+.block-right {
   position: relative;
-  &:first-child{
+  &:first-child {
     display: flex;
     padding-bottom: 42px;
     padding-top: 48px;
-    p{
+    p {
       width: 50%;
       margin-right: 8px;
       margin-left: 6px;
@@ -168,88 +169,88 @@ main{
       font-size: 14px;
       line-height: 1.8em;
     }
-    img{
+    img {
       border-radius: 50%;
       width: 40%;
       height: 50%;
     }
   }
-  &:nth-child(2){
+  &:nth-child(2) {
     padding-bottom: 20px;   
-    li{
+    li {
       padding: 15px 0px;
       list-style: none;
       border-bottom: 1px solid map-get($color, white-c);
-      a{
+      a {
         font-family: Open sans;
         color: map-get($color, secondary);
         font-size: 14px;
       }
-      a:hover{
+      a:hover {
         color: map-get($color, primary);
       }
     }
   }
-  &:nth-child(3){
+  &:nth-child(3) {
     padding-bottom: 22px;
-    .diff-tag-a{
+    .diff-tag-a {
       font-family: Open sans;
       color: map-get($color, secondary);
       font-size: 8pt;
       line-height: 29px;
       padding: 0 10px 10px 10px;
     }
-    .diff-tag-a:hover{
+    .diff-tag-a:hover {
       color: map-get($color, primary);
       text-decoration: underline;
     }
   }
 }
-.cate{
+.cate {
   margin-top: -18px;
 }
-.hash-tag{
+.hash-tag {
   position: absolute;
-  a{
+  a {
     background-color: map-get($color, white);
     color: map-get($color, primary);
     font-size: 45px;
     padding: 2px 20px;
   }
 }
-.hash-about{
+.hash-about {
   top: -34px;
   padding-left: 23%;
 }
-.hash-cate{
+.hash-cate {
   top: -34px;
   padding-left: 14%;
 }
-.hash-tags{
+.hash-tags {
   top: -34px;
   padding-left: 25%;
 }
-.hash-insta{
+.hash-insta {
   top: -34px;
   padding-left: 15%;
 }
-.some-tag{
+.some-tag {
   margin-left: -5px;
 }
-.bl-img{
+.bl-img {
   padding-bottom: 30px;
-  .one-row{
+  .one-row {
     width: 100%;
     margin-top: -5px;
-    img{
+    img {
       width: 32%;
       padding: 2px;
     }
-    img:last-child{
+    img:last-child {
       margin-left: 1px;
     }
   }
 }
-.row2{
+.row2 {
   padding: 20px 0px 21px 0px;
 }
