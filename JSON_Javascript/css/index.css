@@ -1,0 +1,127 @@
+body {
+  font-family: -webkit-pictograph;
+}
+.navigation {
+  height: 80px;
+  background: darkgray;
+}
+.navigation ul {
+  list-style: none;
+  display: flex;
+}
+.navigation ul li {
+  margin: 25px;
+}
+.navigation a {
+  text-decoration: none;
+  font-size: 20px;
+  color: dimgray;
+}
+.navigation a:hover {
+  color: greenyellow;
+}
+.btn-cart {
+  width: 50px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  height: 50px;
+  border: none;
+  background-color: darkgray;
+}
+header span {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  padding-top: 4px;
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  color: black;
+}
+.product {
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px #8888;
+  color: gray;
+}
+.product img {
+  width: 100%;
+  height: 250px;
+}
+.row {
+  margin-top: 30px;
+}
+.col-md-4 {
+  margin-bottom: 30px;
+}
+.btn-primary {
+  float: right;
+  margin-top: 10px;
+}
+.cart {
+  width: 100%;
+  margin-top: 100px;
+}
+td {
+  padding: 10px;
+}
+th {
+  padding: 10px;
+}
+header img {
+  width: 70px;
+  position: absolute;
+  top: 0;
+  right: -4px;
+}
+#show-item {
+  margin: 20px;
+  width: 90%;
+}
+table {
+  border: 2px solid #8888;
+  margin: 50px;
+}
+footer {
+  background-color: darkgray;
+  height: 200px;
+  display: block;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  float: left;
+}
+footer ul li {
+  font-size: 40px;
+  padding: 40px 10px;
+}
+footer ul li a {
+  color: #423a3a;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  color: black;
+  text-decoration: none;
+}
+.about-us {
+  display: inline-block;
+  width: 50%;
+  padding-top: 40px; 
+}
+.about-us h3 {
+
+}
+.about-us p {
+
+}
+input[type="text"] {
+  width: 40px;
+  text-align: center;
+}
