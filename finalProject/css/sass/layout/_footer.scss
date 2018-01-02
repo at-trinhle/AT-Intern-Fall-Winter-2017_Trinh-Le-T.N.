@@ -1,0 +1,128 @@
+.footer {
+  display: block;
+  width: 100%;
+  padding: 4% 0 33% 8px;
+  margin-top: 66px;
+  background-image: url(../images/footer-top-overlay.png), 
+  url(../images/footer-bottom-right.png), url(../images/footer-bottom-bg.jpg);
+  background-repeat: repeat-x,no-repeat,repeat-x;
+  background-position: left top,right bottom,left top;
+  background-origin: border-box,border-box,padding-box;
+  border-top: 10px solid transparent;
+  .contact {
+    display: inline-block;
+    float: left;
+    h3 {
+      color: map-get($color, a);
+      font-family: Zeyada;
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    ul {
+      list-style: none;
+    }
+  }
+}
+.about {
+  p {
+    font-family: Open sans;
+    line-height: 1.8em;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    a {
+      color: map-get($color, secondary);
+    }
+    a:hover {
+      color: map-get($color, primary);
+    }
+  }
+}
+.links {
+  li {
+    margin-bottom: 30px;
+    padding-top: 4px;
+    a {
+      color: map-get($color, nav-li);
+    }
+    a:hover {
+      color: map-get($color, primary);
+    }
+    a:before {
+      content: ">";
+      padding-right: 10px;
+      font-size: .8em;
+    }
+  }
+}
+.newsletter {
+  margin-left: -5px;
+  form {
+    margin-top: 7px;
+    input {
+      width: 222px;
+      height: 35px;
+      padding-left: 11px;
+      margin-bottom: 30px;
+      border: none;
+    }
+  }
+  .btn-submit {
+    margin-bottom: 30px;
+    a{
+      font-size: 27px;
+      font-weight: 400;
+      font-family: Zeyada;
+      color: map-get($color, secondary);
+      background-color: map-get($color, white);
+    }
+  }
+  .not-robot {
+    display: block;
+    .protected {
+      background-color: map-get($color,b);
+      display: inline-block;
+      padding: 7px 7px 20px;
+    }
+    img {
+      width: 70px;
+      position: absolute;    }
+  }
+}
+.protected {
+  p {
+    margin-top: 5px;
+    color: map-get($color, white);
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  a {
+    font-size: 10px;
+    color: map-get($color, white);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.list-icon {
+  display: block;
+  li { 
+    display: inline-block;
+    margin-left: 18px;
+    a {
+      color: map-get($color, white);
+      padding: 9px;
+      background-color: map-get($color, a);
+      border-radius: 3px;
+      font-size: 16px;
+    }
+    a:hover {
+      background-color: map-get($color, white-b);
+    }
+    .fa-facebook {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+}
