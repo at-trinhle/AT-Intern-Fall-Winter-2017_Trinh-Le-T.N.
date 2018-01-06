@@ -1,0 +1,18 @@
+.tags {
+  display: flex;
+  list-style: none;
+  li {
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 12px 20px;
+      color: map-get($color, black);
+    }
+    a:hover {
+      background-color: map-get($color, secondary);
+      color: map-get($color,white);
+      border-radius: 5px;
+    }
+  }
+}
