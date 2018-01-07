@@ -22,9 +22,9 @@ function showCart(data) {
   var arraygetIdProduct = localStorage.getItem('id-product');
   var dt = data['myProduct'];
   var listProduct = [];
-  if(arraygetIdProduct) {
-    for(let i of dt) {
-      if(arraygetIdProduct.includes(i.id)){
+  if (arraygetIdProduct) {
+    for (let i of dt) {
+      if (arraygetIdProduct.includes(i.id)) {
         listProduct.push(i);
       }
     }
@@ -48,24 +48,24 @@ function showCart(data) {
 
   //btn-delete
   del = document.getElementsByClassName('btn-danger');
-  for (let z of del){
+  for (let z of del) {
     z.addEventListener('click', function () {
       var reconfirm = confirm("Do you want to delete this product ?");
-      if ( reconfirm == true ){
+      if (reconfirm == true ) {
         delRow(z);
         showCart(data);
       }
     });
   }
-  function delRow(z){
+  function delRow(z) {
     var dt = data['myProduct'];
     for (i of dt){
-      if (z.getAttribute('data-id') == i.id){
+      if (z.getAttribute('data-id') == i.id) {
         var count = localStorage.getItem('num-product');
         localStorage.setItem('num-product', count - 1);
         var arraygetIdProduct = JSON.parse(localStorage.getItem('id-product'));
         var data_id = z.getAttribute('data-id');
-        for (var q = 0; arr_len = arraygetIdProduct.length, q < arr_len; q++){
+        for (var q = 0; arr_len = arraygetIdProduct.length, q < arr_len; q++) {
           if (parseInt(data_id) === arraygetIdProduct[q]) {
             arraygetIdProduct.splice(q, 1);
           }  
@@ -80,7 +80,7 @@ function calculate(id) {
   var textBox = document.getElementById("number-"+getId);
   var check = textBox.getAttribute('data-id');
   
-  for (var t = 0, len = getList.length; t < len; t++){
+  for (var t = 0, len = getList.length; t < len; t++) {
     if (parseInt(check) == getList[t].id) {
       var changeNum = textBox.value;
       getList[t].quantity = changeNum;
