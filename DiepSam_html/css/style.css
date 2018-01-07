@@ -36,21 +36,21 @@ body {
     display: inline-block;
     padding-left: 225px; }
 
-.menu-list {
+.main-menu {
   list-style: none;
   display: flex; }
-  .menu-list .menu-item {
+  .main-menu .menu-item {
     position: relative;
     text-align: center; }
-    .menu-list .menu-item a {
+    .main-menu .menu-item a {
       display: block;
       padding: 35px 20px;
       text-decoration: none;
       color: #282828;
       font-size: 14px; }
-      .menu-list .menu-item a:hover {
+      .main-menu .menu-item a:hover {
         color: #0b9444; }
-    .menu-list .menu-item a::after {
+    .main-menu .menu-item a::after {
       content: "";
       position: absolute;
       top: 39px;
@@ -59,7 +59,7 @@ body {
       width: 9px;
       height: 9px;
       background-color: #0b9444; }
-    .menu-list .menu-item:last-child a::after {
+    .main-menu .menu-item:last-child a::after {
       width: 0; }
 
 .contact-with-us {
@@ -134,16 +134,16 @@ body {
   left: 45%;
   width: 75px; }
 
-.tags {
+.tab-link {
   display: flex;
   list-style: none; }
-  .tags li a {
+  .tab-link li a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
     padding: 12px 20px;
     color: #282828; }
-  .tags li a:hover {
+  .tab-link li a:hover {
     background-color: #0b9444;
     color: #ffffff;
     border-radius: 5px; }
@@ -265,11 +265,12 @@ body {
   .about-us .logo img {
     background-color: #f7f7f7; }
 
-.decorate {
+.section-head {
+  width: 67%;
   margin-left: 17%;
   border-bottom: 1px solid #c6c6c6;
   position: relative; }
-  .decorate h3 {
+  .section-head h3 {
     text-transform: uppercase;
     text-align: center;
     font-size: 32px;
@@ -288,14 +289,14 @@ body {
     padding-bottom: 30px;
     font-family: Arial MT; }
 
-.products .decorate h3 {
+.products .section-head h3 {
   padding-top: 60px; }
 .products .logo img {
   background-color: #ffffff; }
-.products .list-tag {
+.products .tabs {
   margin-left: 26%; }
 
-.list-tag {
+.tabs {
   text-align: center;
   padding: 60px 0px 42px 0px; }
 
@@ -346,14 +347,14 @@ body {
 
 .projects {
   padding-bottom: 65px; }
-  .projects .decorate h3 {
+  .projects .section-head h3 {
     padding-top: 60px; }
   .projects .logo img {
     background-color: #ffffff; }
-  .projects .list-tag {
+  .projects .tabs {
     margin-left: 38%;
     padding: 60px 0px 40px 0px; }
-    .projects .list-tag .tags {
+    .projects .tabs .tab-link {
       padding-top: 1px; }
 
 .masonry {
@@ -372,9 +373,9 @@ body {
   background-image: url("../images/new-event.jpg");
   color: #ffffff;
   background-repeat: no-repeat; }
-  .news .decorate {
+  .news .section-head {
     border: none; }
-    .news .decorate h3 {
+    .news .section-head h3 {
       padding-top: 55px; }
   .news .logo .icon:before {
     content: "";
@@ -407,7 +408,7 @@ body {
       font-family: Arial MT;
       font-size: 15px; }
 
-.gallery .decorate h3 {
+.gallery .section-head h3 {
   padding: 40px 0px 36px 0px; }
 .gallery .logo img {
   background-color: #ffffff; }

@@ -36,7 +36,8 @@
     }
   }
 }
-.decorate {
+.section-head {
+  width: 67%;
   margin-left: 17%;
   border-bottom: 1px solid map-get($color, gray-b);
   position: relative;
@@ -64,7 +65,7 @@
   }
 }
 .products {
-  .decorate {
+  .section-head {
     h3 {
       padding-top: 60px;
     }
@@ -74,11 +75,11 @@
       background-color: map-get($color, white);
     }
   }
-  .list-tag {
+  .tabs {
     margin-left: 26%;
   }
 }
-.list-tag {
+.tabs {
   text-align: center;
   padding: 60px 0px 42px 0px;
 }
@@ -137,7 +138,7 @@
 }
 .projects {
   padding-bottom: 65px;
-  .decorate {
+  .section-head {
     h3 {
       padding-top: 60px;
     }
@@ -147,10 +148,10 @@
       background-color: map-get($color, white);
     }
   }
-  .list-tag {
+  .tabs{
     margin-left: 38%;
     padding: 60px 0px 40px 0px;
-    .tags {
+    .tab-link {
       padding-top: 1px;
     }
   }
@@ -173,7 +174,7 @@
   background-image: url("../images/new-event.jpg");
   color: map-get($color, white);
   background-repeat: no-repeat;
-  .decorate {
+  .section-head {
     border: none;
     h3 {
       padding-top: 55px;
@@ -220,7 +221,7 @@
   }
 }
 .gallery {
-  .decorate {
+  .section-head {
     h3 {
       padding: 40px 0px 36px 0px;
     }
