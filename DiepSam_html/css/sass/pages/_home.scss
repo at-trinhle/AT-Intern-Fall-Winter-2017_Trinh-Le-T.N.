@@ -26,7 +26,8 @@
 }
 .about-us {
   background-color: map-get($color, gray-a);
-  .info-about {
+  .about-list {
+    list-style: none;
     display: flex;
     padding: 70px 0px 70px 0px;
   }
@@ -48,7 +49,7 @@
     padding: 96px 0px 36px 0px;
   }
 }
-.one-block {
+.about-item {
   margin: 0 10px;
   h3 {
     text-transform: uppercase;
@@ -83,10 +84,10 @@
   text-align: center;
   padding: 60px 0px 42px 0px;
 }
-.list-products-img {
+.products-list {
   display: flex;
   flex-wrap: wrap;
-  .item-products-img {
+  .product-item{
     display: inline-block;
     margin: -2px 0;
     position: relative;
@@ -156,11 +157,12 @@
     }
   }
 }
-.masonry {
+.masonry-list {
   display: block;
   column-count: 4;
   column-gap: 8px;
-  .list-masony {
+  list-style: none;
+  .masony-item {
     break-inside: avoid;
     img {
       padding: 8px 5px;
@@ -203,11 +205,12 @@
     }
   }
 }
-.info-news {
+.news-list {
   display: flex;
   padding: 60px 0px 0px 0px;
   margin: 0 -5px;
-  .block-news {
+  list-style: none;
+  .new-item {
     padding: 0 15px;
     img {
       height: fit-content;
@@ -232,9 +235,10 @@
     }
   }
 }
-.info-gallery {
+.gallery-list {
   display: flex;
   padding: 75px 0px 50px 0px;
+  list-style: none;
   .block-gallery {
     padding: 0px 10px;
     p {
@@ -253,5 +257,62 @@
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 500;
+  }
+}
+.contact-info{
+  display: flex;
+}
+.info-contact {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  .enter-info {
+    margin: 49px 0px 24px 0px;
+    letter-spacing: 1px;
+  }
+  input {
+    margin-bottom: 20px;
+    padding: 10px 13px;
+    width: 95%;
+    font-size: 15px;
+    border: 1px solid map-get($color, gray-b);
+    border-radius: 5px;
+  }
+  textarea {
+    padding: 10px 13px;
+    width: 95%;
+    border: 1px solid map-get($color, gray-b);
+    border-radius: 5px;
+    min-height: 95px;
+  }
+}
+.info-company {
+  padding:  92px 0px 0px 58px;
+  display: inline-block;
+  h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  .consulting {
+    color: map-get($color, gray);
+  }
+  p {
+    padding: 5px 0px;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+.menu-icon {
+  list-style: none;
+  display: flex;
+  margin: 10px 0px 0px -10px;
+  .icon-contact {
+    width: auto;
+    margin: 0px 5px;
+    img {
+      width: 28px;
+    }
   }
 }
