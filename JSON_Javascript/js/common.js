@@ -36,7 +36,8 @@ function showItem(data) {
     name ='<h2>'+i.name+'</h2>';
     img = '<img src="../images/'+i.image+'">';
     price = '<p>Price: '+i.price+'$</p';
-    listPr += '<div class="col-md-4"><div class="product">'+name+img+price+'<div class="btn-buy"><button class="btn btn-primary buy" data-count="0">Buy</button></div></div></div>';
+    listPr += '<div class="col-md-4"><div class="product">'+name+img+price+'<div class="btn-buy">'
+    +'<button class="btn btn-primary buy" data-count="0">Buy</button></div></div></div>';
   }
   document.getElementById('list-Product').innerHTML = listPr;
   clickCount(data);
