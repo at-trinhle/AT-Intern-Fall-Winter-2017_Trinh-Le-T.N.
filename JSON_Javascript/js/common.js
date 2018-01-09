@@ -19,8 +19,8 @@ function fetchJSONFile(path, callback) {
 fetchJSONFile('../dataProduct.json', function(data) {
 });
 function showItem(data) {
-  var name, price, img;
   var listPr = '';
+  var htmlPr = '';
   dt = data['myProduct'];
   var saveCount = localStorage.getItem('num-product');
   if (saveCount){
@@ -33,10 +33,11 @@ function showItem(data) {
     localStorage.setItem('num-product',0);
   }   
   for (let i of dt) {
-    name ='<h2>'+i.name+'</h2>';
-    img = '<img src="../images/'+i.image+'">';
-    price = '<p>Price: '+i.price+'$</p';
-    listPr += '<div class="col-md-4"><div class="product">'+name+img+price+'<div class="btn-buy">'
+    htmlPr = '<div class="col-md-4"><div class="product">';
+    htmlPr +='<h2>'+i.name+'</h2>';
+    htmlPr += '<img src="../images/'+i.image+'">';
+    htmlPr += '<p>Price: '+i.price+'$</p';
+    listPr += htmlPr+'<div class="btn-buy">'
     +'<button class="btn btn-primary buy" data-count="0">Buy</button></div></div></div>';
   }
   document.getElementById('list-Product').innerHTML = listPr;
