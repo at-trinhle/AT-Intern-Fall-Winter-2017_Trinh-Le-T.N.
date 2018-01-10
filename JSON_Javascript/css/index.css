@@ -5,19 +5,19 @@ body {
   height: 80px;
   background: darkgray;
 }
-.navigation ul {
+.main-menu {
   list-style: none;
   display: flex;
 }
-.navigation ul li {
+.main-menu li {
   margin: 25px;
 }
-.navigation a {
+.main-menu a {
   text-decoration: none;
   font-size: 20px;
   color: dimgray;
 }
-.navigation a:hover {
+.main-menu a:hover {
   color: greenyellow;
 }
 .btn-cart {

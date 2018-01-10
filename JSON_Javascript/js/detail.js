@@ -1,16 +1,17 @@
 var dataGetJson;
+var getList;
 function fetchJSONFile(path, callback) {
   var httpRequest = new XMLHttpRequest();
   httpRequest.onreadystatechange = function() {
-    if (httpRequest.readyState === 4) {
-        if (httpRequest.status === 200) {
-          var data = JSON.parse(httpRequest.responseText);
-          showCart(data);
-          if (callback) callback(data);
-          else {
-            //do nothing
-          }
-        }
+    if (httpRequest.readyState === 4 && httpRequest.status === 200) {
+      var data = JSON.parse(httpRequest.responseText);
+      showCart(data);
+      if (callback) {
+        callback(data);
+      } 
+      else {
+        //do nothing
+      }
     }
   };
   httpRequest.open('GET', path);
@@ -20,7 +21,6 @@ function fetchJSONFile(path, callback) {
 fetchJSONFile('../dataProduct.json', function(data) {
   this.dataGetJson = data;  
 });
-var getList;
 function showCart(data) {
   var arraygetIdProduct = localStorage.getItem('id-product');
   var dt = data['myProduct'];
@@ -34,8 +34,7 @@ function showCart(data) {
     getList = listProduct;
   }
   var listCart = '<table class="table">'+
-  '<thead><tr><th>Name</th><th>Price</th><th>Quantity</th>'
-  +'<th>Total</th><th>Delete</th></tr></thead>';
+                 '<thead><tr><th>Name</th><th>Price</th><th>Quantity</th>'+'<th>Total</th><th>Delete</th></tr></thead>';
     var html = '', sum = 0;
   for (let j of listProduct) {
     html += '<tr><td>'+j.name+'</td>';
@@ -50,8 +49,8 @@ function showCart(data) {
   document.getElementById('show-item').innerHTML = listCart;
 
   //btn-delete
-  del = document.getElementsByClassName('btn-danger');
-  for (let z of del) {
+  var deleteBtn = document.getElementsByClassName('btn-danger');
+  for (let z of deleteBtn) {
     z.addEventListener('click', function () {
       var reconfirm = confirm("Do you want to delete this product ?");
       if (reconfirm == true ) {
@@ -69,7 +68,8 @@ function delRow(z) {
       localStorage.setItem('num-product', count - 1);
       var arraygetIdProduct = JSON.parse(localStorage.getItem('id-product'));
       var data_id = z.getAttribute('data-id');
-      for (var q = 0; arr_len = arraygetIdProduct.length, q < arr_len; q++) {
+      var arr_len = arraygetIdProduct.length;
+      for (var q = 0; q < arr_len; q++) {
         if (parseInt(data_id) === arraygetIdProduct[q]) {
           arraygetIdProduct.splice(q, 1);
         }  
