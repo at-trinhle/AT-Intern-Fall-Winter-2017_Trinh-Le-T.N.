@@ -45,8 +45,8 @@ function showItem(dataProduct) {
   clickCount(dataProduct);
 }
 function clickCount(data) {
-  getdata = document.getElementsByClassName('buy');
-  var lengthData = getdata.length;
+  getData = document.getElementsByClassName('buy');
+  var lengthData = getData.length;
   var count = document.getElementById('display').innerHTML;
   var arrayIdProduct = localStorage.getItem('id-product');
   //saveID: object
@@ -55,7 +55,7 @@ function clickCount(data) {
     saveID = [];
   }
   for (let i = 0; i < lengthData; i++) {
-    getdata[i].addEventListener('click', function() {
+    getData[i].addEventListener('click', function() {
       //check id noRepeat
       if (saveID.includes(data['myProduct'][i].id) != 1) {
         saveID.push(data['myProduct'][i].id);
@@ -63,7 +63,7 @@ function clickCount(data) {
         count = Number(count) + 1;
         localStorage.setItem('num-product',count);
         document.getElementById('display').innerHTML = count;
-        getdata[i].disabled = true;
+        getData[i].disabled = true;
       }
     });
   }
