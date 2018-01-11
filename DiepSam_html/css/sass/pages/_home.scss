@@ -1,0 +1,318 @@
+.banner {
+  text-transform: uppercase;
+  color: map-get($color, white);
+  text-align: center;
+  background-image: url(../images/background_1.jpg);
+  background-size: cover;
+  min-height: 745px;
+  margin-left: 10px;
+  h3 {
+    padding-top: 275px;
+    font-size: 26px;
+    font-weight: 400;
+  }
+  h1 {
+    font-size: 42px;
+    padding: 36px 0px 53px;
+    letter-spacing: 1px;
+  }
+  a {
+    padding: 10px 30px;
+    font-size: 18px;
+    &:hover {
+      background-color: map-get($color, primary);
+    }
+  }
+}
+.about-us {
+  background-color: map-get($color, gray-a);
+  .about-list {
+    list-style: none;
+    display: flex;
+    padding: 70px 0px 70px 0px;
+  }
+  .logo {
+    img {
+      background-color: map-get($color, gray-a);
+    }
+  }
+}
+.section-head {
+  width: 67%;
+  margin-left: 17%;
+  border-bottom: 1px solid map-get($color, gray-b);
+  position: relative;
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+    padding: 96px 0px 36px 0px;
+  }
+}
+.about-item {
+  margin: 0 10px;
+  h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 15px;
+    span {
+      color: map-get($color,secondary);
+    }
+  }
+  p {
+    line-height: 18px;
+    padding-bottom: 30px;
+    font-family: Arial MT;
+  }
+}
+.products {
+  .section-head {
+    h3 {
+      padding-top: 60px;
+    }
+  }
+  .logo {
+    img {
+      background-color: map-get($color, white);
+    }
+  }
+  .tabs {
+    margin-left: 26%;
+  }
+}
+.tabs {
+  text-align: center;
+  padding: 60px 0px 42px 0px;
+}
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  .product-item{
+    display: inline-block;
+    margin: -2px 0;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    &:hover::after {
+      background-color: rgba(40, 40, 40, 0.8);
+    }
+    &:hover {
+      .description {
+        display: block;
+      }
+    }
+  }
+}
+.description {
+  display: none;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  z-index: 10;
+  padding: 20px;
+  border-top: 2px solid map-get($color, white);
+  border-bottom: 2px solid map-get($color, white);
+  transform: translate(0, -50%);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: map-get($color, white);
+}
+.view-all {
+  background-color: map-get($color, primary);
+  padding: 50px 0px;
+  text-align: center;
+  margin-top: -2px;
+  a {
+    padding: 10px 78px;
+    &:hover {
+      color: map-get($color, secondary);
+      background-color: map-get($color, white);
+      border: 2px solid map-get($color, secondary);
+    }
+  }
+}
+.projects {
+  padding-bottom: 65px;
+  .section-head {
+    h3 {
+      padding-top: 60px;
+    }
+  }
+  .logo {
+    img {
+      background-color: map-get($color, white);
+    }
+  }
+  .tabs{
+    margin-left: 38%;
+    padding: 60px 0px 40px 0px;
+    .tab-link {
+      padding-top: 1px;
+    }
+  }
+}
+.masonry-list {
+  display: block;
+  column-count: 4;
+  column-gap: 8px;
+  list-style: none;
+  .masony-item {
+    break-inside: avoid;
+    img {
+      padding: 8px 5px;
+      margin-top: 10px;
+      margin: 0;
+    }
+  }
+}
+.news {
+  padding-bottom: 70px;
+  background-image: url("../images/new-event.jpg");
+  color: map-get($color, white);
+  background-repeat: no-repeat;
+  .section-head {
+    border: none;
+    h3 {
+      padding-top: 55px;
+    }
+  }
+  .logo {
+    .icon {
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        width: 340px;
+        height: 1px;
+        background-color: map-get($color, gray);
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 35px;
+        width: 340px;
+        height: 1px;
+        background-color: map-get($color, gray);
+      }
+    }
+  }
+}
+.news-list {
+  display: flex;
+  padding: 60px 0px 0px 0px;
+  margin: 0 -5px;
+  list-style: none;
+  .new-item {
+    padding: 0 15px;
+    img {
+      height: fit-content;
+    }
+    p {
+      padding: 20px 0px 0px;
+      line-height: 15px;
+      font-family: Arial MT;
+      font-size: 15px;
+    }
+  }
+}
+.gallery {
+  .section-head {
+    h3 {
+      padding: 40px 0px 36px 0px;
+    }
+  }
+  .logo {
+    img {
+      background-color: map-get($color, white);
+    }
+  }
+}
+.gallery-list {
+  display: flex;
+  padding: 75px 0px 50px 0px;
+  list-style: none;
+  .block-gallery {
+    padding: 0px 10px;
+    p {
+      padding-top: 20px;
+      line-height: 20px;
+    }
+  }
+}
+.contactUS {
+  margin-top: -5px;
+  background-color: map-get($color, primary);
+  padding: 32px 0px;
+  text-align: center;
+  h3 {
+    color: map-get($color, white);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+.contact-info{
+  display: flex;
+}
+.info-contact {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  .enter-info {
+    margin: 49px 0px 24px 0px;
+    letter-spacing: 1px;
+  }
+  input {
+    margin-bottom: 20px;
+    padding: 10px 13px;
+    width: 95%;
+    font-size: 15px;
+    border: 1px solid map-get($color, gray-b);
+    border-radius: 5px;
+  }
+  textarea {
+    padding: 10px 13px;
+    width: 95%;
+    border: 1px solid map-get($color, gray-b);
+    border-radius: 5px;
+    min-height: 95px;
+  }
+}
+.info-company {
+  padding:  92px 0px 0px 58px;
+  display: inline-block;
+  h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  .consulting {
+    color: map-get($color, gray);
+  }
+  p {
+    padding: 5px 0px;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+.menu-icon {
+  list-style: none;
+  display: flex;
+  margin: 10px 0px 0px -10px;
+  .icon-contact {
+    width: auto;
+    margin: 0px 5px;
+    img {
+      width: 28px;
+    }
+  }
+}
